@@ -2,57 +2,57 @@ fileFormatVersion: 2
 guid: f43044f34a0b7424eb5deb0c04ff27c7
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Unity_MC_render_jump_0
-    21300002: Unity_MC_render_jump_1
-    21300004: Unity_MC_render_jump_2
-    21300006: Unity_MC_render_jump_3
-    21300008: Unity_MC_render_jump_4
-    21300010: Unity_MC_render_jump_5
-    21300012: Unity_MC_render_jump_6
-    21300014: Unity_MC_render_jump_7
-    21300016: Unity_MC_render_jump_8
-    21300018: Unity_MC_render_jump_9
-    21300020: Unity_MC_render_jump_10
-    21300022: Unity_MC_render_jump_11
-    21300024: Unity_MC_render_jump_12
-    21300026: Unity_MC_render_jump_13
-    21300028: Unity_MC_render_jump_14
-    21300030: Unity_MC_render_jump_15
-    21300032: Unity_MC_render_jump_16
-    21300034: Unity_MC_render_jump_17
-    21300036: Unity_MC_render_jump_18
-    21300038: Unity_MC_render_jump_19
-    21300040: Unity_MC_render_jump_20
-    21300042: Unity_MC_render_jump_21
-    21300044: Unity_MC_render_jump_22
-    21300046: Unity_MC_render_jump_23
-    21300048: Unity_MC_render_jump_24
-    21300050: Unity_MC_render_jump_25
-    21300052: Unity_MC_render_jump_26
-    21300054: Unity_MC_render_jump_27
-    21300056: Unity_MC_render_jump_28
-    21300058: Unity_MC_render_jump_29
-    21300060: Unity_MC_render_jump_30
-    21300062: Unity_MC_render_jump_31
-    21300064: Unity_MC_render_jump_32
-    21300066: Unity_MC_render_jump_33
-    21300068: Unity_MC_render_jump_34
-    21300070: Unity_MC_render_jump_35
-    21300072: Unity_MC_render_jump_36
-    21300074: Unity_MC_render_jump_37
-    21300076: Unity_MC_render_jump_38
-    21300078: Unity_MC_render_jump_39
-    21300080: Unity_MC_render_jump_40
-    21300082: Unity_MC_render_jump_41
-    21300084: Unity_MC_render_jump_42
-    21300086: Unity_MC_render_jump_43
-    21300088: Unity_MC_render_jump_44
-    21300090: Unity_MC_render_jump_45
-    21300092: Unity_MC_render_jump_46
-    21300094: Unity_MC_render_jump_47
-    21300096: Unity_MC_render_jump_48
+    21300000: PlayerJump_0
+    21300002: PlayerJump_1
+    21300004: PlayerJump_2
+    21300006: PlayerJump_3
+    21300008: PlayerJump_4
+    21300010: PlayerJump_5
+    21300012: PlayerJump_6
+    21300014: PlayerJump_7
+    21300016: PlayerJump_8
+    21300018: PlayerJump_9
+    21300020: PlayerJump_10
+    21300022: PlayerJump_11
+    21300024: PlayerJump_12
+    21300026: PlayerJump_13
+    21300028: PlayerJump_14
+    21300030: PlayerJump_15
+    21300032: PlayerJump_16
+    21300034: PlayerJump_17
+    21300036: PlayerJump_18
+    21300038: PlayerJump_19
+    21300040: PlayerJump_20
+    21300042: PlayerJump_21
+    21300044: PlayerJump_22
+    21300046: PlayerJump_23
+    21300048: PlayerJump_24
+    21300050: PlayerJump_25
+    21300052: PlayerJump_26
+    21300054: PlayerJump_27
+    21300056: PlayerJump_28
+    21300058: PlayerJump_29
+    21300060: PlayerJump_30
+    21300062: PlayerJump_31
+    21300064: PlayerJump_32
+    21300066: PlayerJump_33
+    21300068: PlayerJump_34
+    21300070: PlayerJump_35
+    21300072: PlayerJump_36
+    21300074: PlayerJump_37
+    21300076: PlayerJump_38
+    21300078: PlayerJump_39
+    21300080: PlayerJump_40
+    21300082: PlayerJump_41
+    21300084: PlayerJump_42
+    21300086: PlayerJump_43
+    21300088: PlayerJump_44
+    21300090: PlayerJump_45
+    21300092: PlayerJump_46
+    21300094: PlayerJump_47
+    21300096: PlayerJump_48
   externalObjects: {}
-  serializedVersion: 7
+  serializedVersion: 9
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -91,7 +91,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 0
+  spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -129,28 +129,17 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - serializedVersion: 2
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Unity_MC_render_jump_0
+      name: PlayerJump_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 756
-        width: 128
-        height: 126
+        x: 37
+        y: 778
+        width: 46
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -158,19 +147,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c53488ab06df641dfbba8b6f8c57d539
+      spriteID: 12d7a2ce00d5471429d0dac1d4775445
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Unity_MC_render_jump_1
+      name: PlayerJump_1
       rect:
         serializedVersion: 2
-        x: 128
-        y: 756
-        width: 128
-        height: 126
+        x: 165
+        y: 779
+        width: 46
+        height: 69
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,19 +167,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 412b4165df5ae4796b63e802592100d7
+      spriteID: 56b7483643d65014f952d863061a316a
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Unity_MC_render_jump_2
+      name: PlayerJump_2
       rect:
         serializedVersion: 2
-        x: 256
-        y: 756
-        width: 128
-        height: 126
+        x: 293
+        y: 780
+        width: 52
+        height: 72
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -198,19 +187,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f12d45c8cb5724cafac961275a614b9a
+      spriteID: 8b22ea1bff4734c4bb8716b7b71b8281
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Unity_MC_render_jump_3
+      name: PlayerJump_3
       rect:
         serializedVersion: 2
-        x: 384
-        y: 756
-        width: 128
-        height: 126
+        x: 422
+        y: 780
+        width: 53
+        height: 73
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -218,19 +207,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 53e1031c8ec0d45af9f4924ea2107853
+      spriteID: 2101af4122494864ca3e656d5bbd3ac9
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Unity_MC_render_jump_4
+      name: PlayerJump_4
       rect:
         serializedVersion: 2
-        x: 512
-        y: 756
-        width: 128
-        height: 126
+        x: 549
+        y: 782
+        width: 55
+        height: 73
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -238,19 +227,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 91982097211434d37a9c0a49a7d5afd2
+      spriteID: ea267d02814c905448e375b3064da915
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Unity_MC_render_jump_5
+      name: PlayerJump_5
       rect:
         serializedVersion: 2
-        x: 640
-        y: 756
-        width: 128
-        height: 126
+        x: 677
+        y: 783
+        width: 55
+        height: 73
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -258,19 +247,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 645a0fe313ae04cf09a3c222e52f713a
+      spriteID: c1a9c3a22deb79a41acc0ae8b46945f7
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Unity_MC_render_jump_6
+      name: PlayerJump_6
       rect:
         serializedVersion: 2
-        x: 768
-        y: 756
-        width: 128
-        height: 126
+        x: 804
+        y: 784
+        width: 56
+        height: 76
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -278,19 +267,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0d86039ccec294fd38828d98607bc9b5
+      spriteID: eabbf7cf975d8454abfaa75cbb963348
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Unity_MC_render_jump_7
+      name: PlayerJump_7
       rect:
         serializedVersion: 2
-        x: 0
-        y: 630
-        width: 128
-        height: 126
+        x: 36
+        y: 658
+        width: 56
+        height: 76
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -298,19 +287,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 38b55ae0d7abb4bd0b94c8a63384104d
+      spriteID: 56c38b95283cddf42adddb3851407886
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Unity_MC_render_jump_8
+      name: PlayerJump_8
       rect:
         serializedVersion: 2
-        x: 128
-        y: 630
-        width: 128
-        height: 126
+        x: 163
+        y: 658
+        width: 56
+        height: 76
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -318,19 +307,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9ef68d13cccee4ba58ee052605f4138a
+      spriteID: 7d1ca8219ebb99b4dbb3d4f6895ef8f2
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Unity_MC_render_jump_9
+      name: PlayerJump_9
       rect:
         serializedVersion: 2
-        x: 256
-        y: 630
-        width: 128
-        height: 126
+        x: 290
+        y: 659
+        width: 57
+        height: 76
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -338,19 +327,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 748a79d3a5abc4ebea019bab70a1707b
+      spriteID: 79eb47e6652880247a2e1161340e8794
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Unity_MC_render_jump_10
+      name: PlayerJump_10
       rect:
         serializedVersion: 2
-        x: 384
-        y: 630
-        width: 128
-        height: 126
+        x: 418
+        y: 659
+        width: 56
+        height: 76
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -358,19 +347,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 914b9912423524dd3ab4acb1c5ff9ab0
+      spriteID: 0a11bc1ab52f6a945a105e8f2500ab4a
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Unity_MC_render_jump_11
+      name: PlayerJump_11
       rect:
         serializedVersion: 2
-        x: 512
-        y: 630
-        width: 128
-        height: 126
+        x: 545
+        y: 659
+        width: 56
+        height: 76
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -378,19 +367,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ce2357d506e32461895d1c85a9069889
+      spriteID: f96c5b5d641d4a349b3960f131eea53b
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Unity_MC_render_jump_12
+      name: PlayerJump_12
       rect:
         serializedVersion: 2
-        x: 640
-        y: 630
-        width: 128
-        height: 126
+        x: 673
+        y: 660
+        width: 56
+        height: 75
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -398,19 +387,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b2e32564288964b2d9e784892a631925
+      spriteID: 39c2edefb495aad46a2d398d0942d2f2
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Unity_MC_render_jump_13
+      name: PlayerJump_13
       rect:
         serializedVersion: 2
-        x: 768
-        y: 630
-        width: 128
-        height: 126
+        x: 800
+        y: 660
+        width: 56
+        height: 75
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -418,19 +407,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 85b16c51259d84b39a83ba06b5aef087
+      spriteID: fa24992b4f28e6e4c80c58ea1253638e
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Unity_MC_render_jump_14
+      name: PlayerJump_14
       rect:
         serializedVersion: 2
-        x: 0
-        y: 504
-        width: 128
-        height: 126
+        x: 32
+        y: 534
+        width: 55
+        height: 75
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -438,19 +427,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e3ba6322c97ae427abcaea8598a79efd
+      spriteID: 2e956e80dade9f44f896d2971c255f0f
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Unity_MC_render_jump_15
+      name: PlayerJump_15
       rect:
         serializedVersion: 2
-        x: 128
-        y: 504
-        width: 128
-        height: 126
+        x: 159
+        y: 534
+        width: 55
+        height: 75
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -458,19 +447,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 89b59007f78ba4c6294708cb9d813b10
+      spriteID: c84b4d3757a824144a5fa1ad31a70db2
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Unity_MC_render_jump_16
+      name: PlayerJump_16
       rect:
         serializedVersion: 2
-        x: 256
-        y: 504
-        width: 128
-        height: 126
+        x: 287
+        y: 534
+        width: 54
+        height: 75
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -478,19 +467,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 000768b70a67e475aaa38db55799595b
+      spriteID: 7bc3d246c50959649b28f7b46db95266
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Unity_MC_render_jump_17
+      name: PlayerJump_17
       rect:
         serializedVersion: 2
-        x: 384
-        y: 504
-        width: 128
-        height: 126
+        x: 415
+        y: 535
+        width: 53
+        height: 74
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -498,19 +487,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2a380981a834247b6a413a25d503b327
+      spriteID: fcc3b6dcbc74b994b975367cff3fc281
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Unity_MC_render_jump_18
+      name: PlayerJump_18
       rect:
         serializedVersion: 2
-        x: 512
-        y: 504
-        width: 128
-        height: 126
+        x: 542
+        y: 535
+        width: 53
+        height: 75
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -518,19 +507,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0a7284c0381ba4b4ab29d800d90caaf7
+      spriteID: fa5053ffffd40bf499bb7b5f117a6f3e
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Unity_MC_render_jump_19
+      name: PlayerJump_19
       rect:
         serializedVersion: 2
-        x: 640
-        y: 504
-        width: 128
-        height: 126
+        x: 670
+        y: 535
+        width: 53
+        height: 75
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -538,19 +527,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 27483b007bb3146bf9d35682bff1e54e
+      spriteID: fab72fef4e5d41740b22aa5dc2ae6ce7
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Unity_MC_render_jump_20
+      name: PlayerJump_20
       rect:
         serializedVersion: 2
-        x: 768
-        y: 504
-        width: 128
-        height: 126
+        x: 798
+        y: 535
+        width: 52
+        height: 75
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -558,19 +547,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aa1c2529eab4a472a9c2560b398f1baa
+      spriteID: ddac5479b6618f240bc6f026e62fbf41
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Unity_MC_render_jump_21
+      name: PlayerJump_21
       rect:
         serializedVersion: 2
-        x: 0
-        y: 378
-        width: 128
-        height: 126
+        x: 30
+        y: 409
+        width: 51
+        height: 74
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -578,19 +567,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ae48c71afd2e34441a4d323e850ebec2
+      spriteID: caa1ec2cdcfba8c48a0aa29e9ce8a8e1
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Unity_MC_render_jump_22
+      name: PlayerJump_22
       rect:
         serializedVersion: 2
-        x: 128
-        y: 378
-        width: 128
-        height: 126
+        x: 158
+        y: 409
+        width: 51
+        height: 74
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -598,19 +587,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6d0546bb2e6b84d7ebc59be685e6af36
+      spriteID: 47ada4e07231f2f4f88a851426f9b680
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Unity_MC_render_jump_23
+      name: PlayerJump_23
       rect:
         serializedVersion: 2
-        x: 256
-        y: 378
-        width: 128
-        height: 126
+        x: 286
+        y: 409
+        width: 50
+        height: 74
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -618,19 +607,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dcdaf229384e8481ea8793bc5a81b414
+      spriteID: 73af5aa8e0586f44bac9d49b94ca3ab9
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Unity_MC_render_jump_24
+      name: PlayerJump_24
       rect:
         serializedVersion: 2
-        x: 384
-        y: 378
-        width: 128
-        height: 126
+        x: 414
+        y: 409
+        width: 50
+        height: 74
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -638,19 +627,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: de900ba5c982d468d86ca1f3bc23ebc0
+      spriteID: 2b42244b493d75b47a23c9ea221d8f80
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Unity_MC_render_jump_25
+      name: PlayerJump_25
       rect:
         serializedVersion: 2
-        x: 512
-        y: 378
-        width: 128
-        height: 126
+        x: 542
+        y: 409
+        width: 49
+        height: 74
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -658,19 +647,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 968699a1a6f074a36bbbf28ef1b1ba0d
+      spriteID: ae0182b6c9481214f98300ad4998f476
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Unity_MC_render_jump_26
+      name: PlayerJump_26
       rect:
         serializedVersion: 2
-        x: 640
-        y: 378
-        width: 128
-        height: 126
+        x: 670
+        y: 409
+        width: 49
+        height: 74
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -678,19 +667,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0a199ec38c6ee43909db7113be483d01
+      spriteID: 8d2a53c97b8dfc54e85ff0cecf8dade8
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Unity_MC_render_jump_27
+      name: PlayerJump_27
       rect:
         serializedVersion: 2
-        x: 768
-        y: 378
-        width: 128
-        height: 126
+        x: 798
+        y: 409
+        width: 49
+        height: 75
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -698,19 +687,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1ac10529f4f08453e8833cebda2b4ea1
+      spriteID: 784b75aa781a3c8459ab63f57433566c
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Unity_MC_render_jump_28
+      name: PlayerJump_28
       rect:
         serializedVersion: 2
-        x: 0
-        y: 252
-        width: 128
-        height: 126
+        x: 30
+        y: 284
+        width: 49
+        height: 72
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -718,19 +707,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 390c5d4e8758741c4bb124e3ff16330a
+      spriteID: 732860cbd75022c4fa0646ac3ff56710
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Unity_MC_render_jump_29
+      name: PlayerJump_29
       rect:
         serializedVersion: 2
-        x: 128
-        y: 252
-        width: 128
-        height: 126
+        x: 158
+        y: 284
+        width: 49
+        height: 74
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -738,19 +727,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5ca1873f51e9b444189728ee181beba5
+      spriteID: d17414d8566a1d743aaf282d0115d991
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Unity_MC_render_jump_30
+      name: PlayerJump_30
       rect:
         serializedVersion: 2
-        x: 256
-        y: 252
-        width: 128
-        height: 126
+        x: 286
+        y: 284
+        width: 49
+        height: 74
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -758,19 +747,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0be4a21fc56864000b702c32b2bd8896
+      spriteID: 965193d52038da448bbd4056bb13434d
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Unity_MC_render_jump_31
+      name: PlayerJump_31
       rect:
         serializedVersion: 2
-        x: 384
-        y: 252
-        width: 128
-        height: 126
+        x: 414
+        y: 284
+        width: 49
+        height: 73
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -778,19 +767,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4546748283086461bb3f3afc7e016925
+      spriteID: 903974dcea5da7a4ab0ccfead9bb4aa9
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Unity_MC_render_jump_32
+      name: PlayerJump_32
       rect:
         serializedVersion: 2
-        x: 512
-        y: 252
-        width: 128
-        height: 126
+        x: 542
+        y: 284
+        width: 49
+        height: 73
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -798,19 +787,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 902b60368d7c04efcb7016e07c38329a
+      spriteID: 472d79b510b7eb34984cb5726f1b71bd
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Unity_MC_render_jump_33
+      name: PlayerJump_33
       rect:
         serializedVersion: 2
-        x: 640
-        y: 252
-        width: 128
-        height: 126
+        x: 671
+        y: 284
+        width: 48
+        height: 72
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -818,19 +807,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 07f0e2f82611d41c8b517f3d394d7d7c
+      spriteID: 94ceee8ef76538c4797f7dfbf19a5bb7
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Unity_MC_render_jump_34
+      name: PlayerJump_34
       rect:
         serializedVersion: 2
-        x: 768
-        y: 252
-        width: 128
-        height: 126
+        x: 799
+        y: 284
+        width: 49
+        height: 73
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -838,19 +827,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 18a7bd6d6711e4b64bb0f0586f57c799
+      spriteID: bb38e36e261b83a41a4e4eea7cfc0533
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Unity_MC_render_jump_35
+      name: PlayerJump_35
       rect:
         serializedVersion: 2
-        x: 0
-        y: 126
-        width: 128
-        height: 126
+        x: 31
+        y: 158
+        width: 49
+        height: 71
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -858,19 +847,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bfe042f6657504b2c98720ad441c7d48
+      spriteID: 51661f803b2827c4b9f20cf7fe6cb27f
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Unity_MC_render_jump_36
+      name: PlayerJump_36
       rect:
         serializedVersion: 2
-        x: 128
-        y: 126
-        width: 128
-        height: 126
+        x: 159
+        y: 158
+        width: 49
+        height: 71
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -878,19 +867,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2cf64826c024f4b5e86397401ce99036
+      spriteID: 069854909feadff49b1da7a027b89747
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Unity_MC_render_jump_37
+      name: PlayerJump_37
       rect:
         serializedVersion: 2
-        x: 256
-        y: 126
-        width: 128
-        height: 126
+        x: 287
+        y: 158
+        width: 49
+        height: 71
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -898,19 +887,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f0044ac61993444358fcbb4ea4f86f52
+      spriteID: 9c861d295410ec640a3441c38c53970f
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Unity_MC_render_jump_38
+      name: PlayerJump_38
       rect:
         serializedVersion: 2
-        x: 384
-        y: 126
-        width: 128
-        height: 126
+        x: 415
+        y: 158
+        width: 49
+        height: 71
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -918,19 +907,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 286bafdb1fcc34cd7959386860133266
+      spriteID: 20df2b99f5488a547b43756c4590e240
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Unity_MC_render_jump_39
+      name: PlayerJump_39
       rect:
         serializedVersion: 2
-        x: 512
-        y: 126
-        width: 128
-        height: 126
+        x: 544
+        y: 158
+        width: 48
+        height: 71
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -938,19 +927,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d66a77cf7c8994a1b883c27819fd930b
+      spriteID: 1e589bb9b7393d843906036ba1a68fc0
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Unity_MC_render_jump_40
+      name: PlayerJump_40
       rect:
         serializedVersion: 2
-        x: 640
-        y: 126
-        width: 128
-        height: 126
+        x: 672
+        y: 158
+        width: 48
+        height: 70
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -958,19 +947,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cbaedda04256b4d14b48eb9cdb876942
+      spriteID: 37e34d7eada28ed4a8ce27c0b34f35a1
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Unity_MC_render_jump_41
+      name: PlayerJump_41
       rect:
         serializedVersion: 2
-        x: 768
-        y: 126
-        width: 128
-        height: 126
+        x: 800
+        y: 158
+        width: 48
+        height: 72
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -978,19 +967,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 231fc808657b142b38465a4cae3ac889
+      spriteID: 0ffaf14e0e99ed448a12a0a916d75073
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Unity_MC_render_jump_42
+      name: PlayerJump_42
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 128
-        height: 126
+        x: 32
+        y: 32
+        width: 48
+        height: 71
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -998,19 +987,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a301c63674b64448380740ace5213cf6
+      spriteID: 7fb2ee841a7bf7c4db5d54042a192dd7
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Unity_MC_render_jump_43
+      name: PlayerJump_43
       rect:
         serializedVersion: 2
-        x: 128
-        y: 0
-        width: 128
-        height: 126
+        x: 160
+        y: 32
+        width: 48
+        height: 71
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1018,19 +1007,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b13b62a96557b4004890305101b8e80b
+      spriteID: 961d0b2a7c9f72f4086787f92df7b26f
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Unity_MC_render_jump_44
+      name: PlayerJump_44
       rect:
         serializedVersion: 2
-        x: 256
-        y: 0
-        width: 128
-        height: 126
+        x: 288
+        y: 32
+        width: 48
+        height: 72
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1038,19 +1027,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 02e87832637dc4174aeb9378849b6fdc
+      spriteID: 819f7c680c865a6428a93e20a1d4dae1
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Unity_MC_render_jump_45
+      name: PlayerJump_45
       rect:
         serializedVersion: 2
-        x: 384
-        y: 0
-        width: 128
-        height: 126
+        x: 416
+        y: 32
+        width: 48
+        height: 72
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1058,19 +1047,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e80677d8e318b4304b23780fc79dad01
+      spriteID: 26fb4e651970ddb44a2d1db2dbdf6a4b
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Unity_MC_render_jump_46
+      name: PlayerJump_46
       rect:
         serializedVersion: 2
-        x: 512
-        y: 0
-        width: 128
-        height: 126
+        x: 544
+        y: 32
+        width: 48
+        height: 72
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1078,19 +1067,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 867132c3bb2c5476fbe150117c840318
+      spriteID: 6e40ab5978938d848a7e65e8cc2e1428
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Unity_MC_render_jump_47
+      name: PlayerJump_47
       rect:
         serializedVersion: 2
-        x: 640
-        y: 0
-        width: 128
-        height: 126
+        x: 672
+        y: 32
+        width: 48
+        height: 72
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1098,19 +1087,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b44e3411cb788493fa82c1ec41894dc1
+      spriteID: dd190a50d1eb9df4bb5ef2e5b6744c71
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Unity_MC_render_jump_48
+      name: PlayerJump_48
       rect:
         serializedVersion: 2
-        x: 768
-        y: 0
-        width: 128
-        height: 126
+        x: 800
+        y: 32
+        width: 48
+        height: 70
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1118,7 +1107,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 63f013803b5fd470998f41b4e5195b35
+      spriteID: 805a9130272435d42920bd6909a11d39
       vertices: []
       indices: 
       edges: []
@@ -1126,7 +1115,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: d19a003de1e654f98be37a80a68b3b7c
+    spriteID: 20051035477cbe640bda691b4d527085
     vertices: []
     indices: 
     edges: []
