@@ -137,6 +137,7 @@ namespace Platformer.Mechanics {
             else if (move.x < -0.01f)
                 spriteRenderer.flipX = true;
 
+
             if (onLadder) {
                 gravityModifier = 0f;
                 if (Input.GetKeyDown (KeyCode.W) || Input.GetKeyDown (KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.Space )) {

@@ -3,8 +3,9 @@
     "",
     "\\Assets",
     "\\Assets\\Scripts",
+    "\\Assets\\Scripts\\Gameplay",
     "\\Assets\\Scripts\\Mechanics"
   ],
-  "SelectedNode": "\\Assets\\Scripts\\Mechanics\\Health.cs",
+  "SelectedNode": "\\Assets\\Scripts\\Gameplay\\Timer.cs",
   "PreviewInSolutionExplorer": false
 }
