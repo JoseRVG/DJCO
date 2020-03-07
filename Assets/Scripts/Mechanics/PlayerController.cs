@@ -158,7 +158,7 @@ namespace Platformer.Mechanics {
             animator.SetBool ("grounded", IsGrounded);
             animator.SetFloat ("velocityX", Mathf.Abs (velocity.x) / maxSpeed);
 
-            if (Input.GetKey(KeyCode.Q)) {
+            if (Input.GetKey(KeyCode.Q) && (Input.GetKey(KeyCode.RightArrow)||Input.GetKey(KeyCode.LeftArrow))) {
                 if (health.currentStamina > 0) {
                     targetVelocity = move * (maxSpeed * 2);
                     health.DecrementStamina ();
