@@ -138,12 +138,13 @@ namespace Platformer.Mechanics {
                 spriteRenderer.flipX = true;
 
             if (onLadder) {
-                if (Input.GetKeyDown (KeyCode.W) || Input.GetKeyDown (KeyCode.UpArrow)) {
+                gravityModifier = 0f;
+                if (Input.GetKeyDown (KeyCode.W) || Input.GetKeyDown (KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.Space )) {
                     velocity.y = 2f;
-                    gravityModifier = 0f;
                     jumpState = JumpState.InFlight;
                     if (Input.GetKeyDown (KeyCode.Q)) {
                         targetVelocity = move * (maxSpeed * 2);
+
                     } else {
                         targetVelocity = move * maxSpeed;
                     }
@@ -157,7 +158,7 @@ namespace Platformer.Mechanics {
             animator.SetBool ("grounded", IsGrounded);
             animator.SetFloat ("velocityX", Mathf.Abs (velocity.x) / maxSpeed);
 
-            if (Input.GetKey (KeyCode.Q)) {
+            if (Input.GetKey(KeyCode.Q)) {
                 if (health.currentStamina > 0) {
                     targetVelocity = move * (maxSpeed * 2);
                     health.DecrementStamina ();
