@@ -16,7 +16,7 @@ public class Timer : MonoBehaviour {
     public AudioClip toc;
     public AudioClip tictoc;
 
-    private Health health;
+    public Health health;
 
 
     // Start is called before the first frame update

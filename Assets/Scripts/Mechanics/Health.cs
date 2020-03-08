@@ -76,6 +76,7 @@ namespace Platformer.Mechanics {
         }
 
         public void EndGame () {
+            Debug.Log("END");
             anim.SetBool("End",true);
         }
 
