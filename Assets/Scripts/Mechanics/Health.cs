@@ -17,6 +17,8 @@ namespace Platformer.Mechanics {
         public int maxHP;
         public int maxStamina;
         private int regeneration = 1;
+        [SerializeField]
+        private GameObject gameOverUI;
 
         /// <summary>
         /// Indicates if the entity should be considered 'alive'.
@@ -25,6 +27,7 @@ namespace Platformer.Mechanics {
 
         public int currentHP;
         public int currentStamina;
+        public Animator anim;
 
         /// <summary>
         /// Increment the HP of the entity.
@@ -41,7 +44,7 @@ namespace Platformer.Mechanics {
             currentStamina += regeneration;
             if (currentStamina > maxStamina)
                 currentStamina = maxStamina;
-                
+
             myStaminaBar.value = currentStamina;
         }
 
@@ -55,6 +58,7 @@ namespace Platformer.Mechanics {
             if (currentHP == 0) {
                 var ev = Schedule<HealthIsZero> ();
                 ev.health = this;
+                EndGame();
             }
         }
 
@@ -67,7 +71,12 @@ namespace Platformer.Mechanics {
         /// Decrement the HP of the entitiy until HP reaches 0.
         /// </summary>
         public void Die () {
-            while (currentHP > 0) Decrement ();
+            while (currentHP > 0)
+            Decrement ();
+        }
+
+        public void EndGame () {
+            anim.SetBool("End",true);
         }
 
         void Awake () {

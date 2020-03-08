@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Platformer.Mechanics;
+using TMPro;
 
 public class Timer : MonoBehaviour {
-    public float timeStart = 60;
-    public Text textBox;
+    public float timeStart = 10;
+    public TextMeshProUGUI textBox;
     public Transform TimerBar;
     public bool tictocflag;
     AudioSource audioData;
@@ -13,6 +15,8 @@ public class Timer : MonoBehaviour {
     public AudioClip tic;
     public AudioClip toc;
     public AudioClip tictoc;
+
+    private Health health;
 
 
     // Start is called before the first frame update
@@ -54,7 +58,8 @@ public class Timer : MonoBehaviour {
         }
         else
         {
-            textBox.text = "Time is UP GAME OVER";
+            textBox.text = "0";
+            health.EndGame();
         }
     }
 }
