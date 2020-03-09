@@ -6,7 +6,7 @@ using Platformer.Mechanics;
 using TMPro;
 
 public class Timer : MonoBehaviour {
-    public float timeStart = 10;
+    public float timeStart = 60;
     public TextMeshProUGUI textBox;
     public Transform TimerBar;
     public bool tictocflag;

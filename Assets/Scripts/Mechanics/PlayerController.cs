@@ -33,7 +33,7 @@ namespace Platformer.Mechanics {
         public AudioSource audioSource;
         public Health health;
         public bool controlEnabled = true;
-        public int onDoor = 0
+        public string onDoor = "0";
         public int grades = 5;
         private float waitHP = 5f;
         private float lastRegenHP = 1f / 5f;
@@ -48,13 +48,20 @@ namespace Platformer.Mechanics {
         readonly PlatformerModel model = Simulation.GetModel<PlatformerModel> ();
 
         public Bounds Bounds => collider2d.bounds;
-
+   
         void Awake () {
             health = GetComponent<Health> ();
             audioSource = GetComponent<AudioSource> ();
             collider2d = GetComponent<Collider2D> ();
             spriteRenderer = GetComponent<SpriteRenderer> ();
             animator = GetComponent<Animator> ();
+           
+            int i = Random.Range(1,3);
+            switch (i)
+            {
+                case 1: onDoor = "101"; break;
+                case 2: onDoor = "102"; break;
+            }
         }
 
         protected override void Update () {
@@ -70,13 +77,13 @@ namespace Platformer.Mechanics {
             } else {
                 move.x = 0;
             }
-            if (onDoor) {
+            if (onDoor!="0") {
                 if (Input.GetKeyDown (KeyCode.E)) {
                     grades = grades - 1;
                     
                     print (grades);
                 }
-            } else if (!onDoor) {
+            } else if (onDoor=="0") {
 
             }
 
