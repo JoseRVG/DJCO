@@ -44467,6 +44467,11 @@ PrefabInstance:
       propertyPath: health
       value: 
       objectReference: {fileID: 838423052}
+    - target: {fileID: 114230831923080080, guid: 7d60c822c3f1b408ea7a00ecdb5e047a,
+        type: 3}
+      propertyPath: itens
+      value: 
+      objectReference: {fileID: 1393768552}
     - target: {fileID: 6082575806313374961, guid: 7d60c822c3f1b408ea7a00ecdb5e047a,
         type: 3}
       propertyPath: maxHP
@@ -45941,8 +45946,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 1393768550}
-  boxCol: {fileID: 1393768553}
-  Door: {fileID: 1393768549}
+  Door: 0
+  ID: 101
 --- !u!61 &1393768553
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -46000,8 +46005,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 1471928709}
-  boxCol: {fileID: 1471928708}
-  Door: {fileID: 1471928705}
+  Door: 0
+  ID: 102
 --- !u!61 &1471928708
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -47559,7 +47564,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: 0
+  m_firstOverflowCharacterIndex: -1
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0

@@ -33,7 +33,9 @@ namespace Platformer.Mechanics {
         public AudioSource audioSource;
         public Health health;
         public bool controlEnabled = true;
-        public string onDoor = "0";
+        public bool onDoor;
+        public bool DoorControl = false;
+        public int DoorNum;
         public int grades = 5;
         private float waitHP = 5f;
         private float lastRegenHP = 1f / 5f;
@@ -48,20 +50,14 @@ namespace Platformer.Mechanics {
         readonly PlatformerModel model = Simulation.GetModel<PlatformerModel> ();
 
         public Bounds Bounds => collider2d.bounds;
-   
+
         void Awake () {
             health = GetComponent<Health> ();
             audioSource = GetComponent<AudioSource> ();
             collider2d = GetComponent<Collider2D> ();
             spriteRenderer = GetComponent<SpriteRenderer> ();
             animator = GetComponent<Animator> ();
-           
-            int i = Random.Range(1,3);
-            switch (i)
-            {
-                case 1: onDoor = "101"; break;
-                case 2: onDoor = "102"; break;
-            }
+            RandomDoor ();
         }
 
         protected override void Update () {
@@ -77,13 +73,16 @@ namespace Platformer.Mechanics {
             } else {
                 move.x = 0;
             }
-            if (onDoor!="0") {
+            if (onDoor) {
                 if (Input.GetKeyDown (KeyCode.E)) {
-                    grades = grades - 1;
-                    
+                    if (DoorControl) {
+                        grades = grades - 1;
+                        onDoor = false;
+                        RandomDoor ();
+                    }
                     print (grades);
                 }
-            } else if (onDoor=="0") {
+            } else if (!onDoor) {
 
             }
 
@@ -145,10 +144,9 @@ namespace Platformer.Mechanics {
             else if (move.x < -0.01f)
                 spriteRenderer.flipX = true;
 
-
             if (onLadder) {
                 gravityModifier = 0f;
-                if (Input.GetKeyDown (KeyCode.W) || Input.GetKeyDown (KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.Space )) {
+                if (Input.GetKeyDown (KeyCode.W) || Input.GetKeyDown (KeyCode.UpArrow) || Input.GetKeyDown (KeyCode.Space)) {
                     velocity.y = 2f;
                     jumpState = JumpState.InFlight;
                     if (Input.GetKeyDown (KeyCode.Q)) {
@@ -167,7 +165,7 @@ namespace Platformer.Mechanics {
             animator.SetBool ("grounded", IsGrounded);
             animator.SetFloat ("velocityX", Mathf.Abs (velocity.x) / maxSpeed);
 
-            if (Input.GetKey(KeyCode.Q) && (Input.GetKey(KeyCode.RightArrow)||Input.GetKey(KeyCode.LeftArrow))) {
+            if (Input.GetKey (KeyCode.Q) && (Input.GetKey (KeyCode.RightArrow) || Input.GetKey (KeyCode.LeftArrow))) {
                 if (health.currentStamina > 0) {
                     targetVelocity = move * (maxSpeed * 2);
                     health.DecrementStamina ();
@@ -181,6 +179,18 @@ namespace Platformer.Mechanics {
                 targetVelocity = move * maxSpeed;
             }
 
+        }
+
+        void RandomDoor () {
+            int i = Random.Range (1, 3);
+            switch (i) {
+                case 1:
+                    DoorNum = 101;
+                    break;
+                case 2:
+                    DoorNum = 102;
+                    break;
+            }
         }
 
         public enum JumpState {

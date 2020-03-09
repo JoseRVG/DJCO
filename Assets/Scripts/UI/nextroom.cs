@@ -15,12 +15,12 @@ public class nextroom : MonoBehaviour
     void Start()
     {
 
-        textBox.text = player.onDoor.ToString();
+        textBox.text = player.DoorNum.ToString();
     }
 
     // Update is called once per frame
     void Update()
     {
-        textBox.text = player.onDoor.ToString();
+        textBox.text = player.DoorNum.ToString();
     }
 }
