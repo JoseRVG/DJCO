@@ -182,13 +182,136 @@ namespace Platformer.Mechanics {
         }
 
         void RandomDoor () {
-            int i = Random.Range (1, 3);
+            int i = Random.Range (1, 44);
             switch (i) {
                 case 1:
-                    DoorNum = 101;
+                    DoorNum = 001;
                     break;
                 case 2:
+                    DoorNum = 002;
+                    break;
+                case 3:
+                    DoorNum = 003;
+                    break;
+                case 4:
+                    DoorNum = 004;
+                    break;
+                case 5:
+                    DoorNum = 005;
+                    break;
+                case 6:
+                    DoorNum = 006;
+                    break;
+                case 7:
+                    DoorNum = 007;
+                    break;
+                case 8:
+                    DoorNum = 008;
+                    break;
+                case 9:
+                    DoorNum = 101;
+                    break;
+                case 10:
                     DoorNum = 102;
+                    break;
+                case 11:
+                    DoorNum = 103;
+                    break;
+                case 12:
+                    DoorNum = 104;
+                    break;
+                case 13:
+                    DoorNum = 105;
+                    break;
+                case 14:
+                    DoorNum = 106;
+                    break;
+                case 15:
+                    DoorNum = 107;
+                    break;
+                case 16:
+                    DoorNum = 108;
+                    break;
+                case 17:
+                    DoorNum = 109;
+                    break;
+                case 18:
+                    DoorNum = 110;
+                    break;
+                case 19:
+                    DoorNum = 111;
+                    break;
+                case 20:
+                    DoorNum = 112;
+                    break;
+                case 21:
+                    DoorNum = 113;
+                    break;
+                case 22:
+                    DoorNum = 201;
+                    break;
+                case 23:
+                    DoorNum = 202;
+                    break;
+                case 24:
+                    DoorNum = 203;
+                    break;
+                case 25:
+                    DoorNum = 204;
+                    break;
+                case 26:
+                    DoorNum = 205;
+                    break;
+                case 27:
+                    DoorNum = 206;
+                    break;
+                case 28:
+                    DoorNum = 207;
+                    break;
+                case 29:
+                    DoorNum = 208;
+                    break;
+                case 30:
+                    DoorNum = 209;
+                    break;
+                case 31:
+                    DoorNum = 210;
+                    break;
+                case 32:
+                    DoorNum = 211;
+                    break;
+                case 33:
+                    DoorNum = 301;
+                    break;
+                case 34:
+                    DoorNum = 302;
+                    break;
+                case 35:
+                    DoorNum = 303;
+                    break;
+                case 36:
+                    DoorNum = 304;
+                    break;
+                case 37:
+                    DoorNum = 305;
+                    break;
+                case 38:
+                    DoorNum = 306;
+                    break;
+                case 39:
+                    DoorNum = 307;
+                    break;
+                case 40:
+                    DoorNum = 308;
+                    break;
+                case 41:
+                    DoorNum = 309;
+                    break;
+                case 42:
+                    DoorNum = 310;
+                    break;
+                case 43:
+                    DoorNum = 311;
                     break;
             }
         }
