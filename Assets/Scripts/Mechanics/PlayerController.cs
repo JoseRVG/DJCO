@@ -33,7 +33,7 @@ namespace Platformer.Mechanics {
         public AudioSource audioSource;
         public Health health;
         public bool controlEnabled = true;
-        public bool onDoor = false;
+        public int onDoor = 0
         public int grades = 5;
         private float waitHP = 5f;
         private float lastRegenHP = 1f / 5f;
@@ -73,6 +73,7 @@ namespace Platformer.Mechanics {
             if (onDoor) {
                 if (Input.GetKeyDown (KeyCode.E)) {
                     grades = grades - 1;
+                    
                     print (grades);
                 }
             } else if (!onDoor) {

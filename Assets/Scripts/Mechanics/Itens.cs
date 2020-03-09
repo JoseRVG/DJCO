@@ -16,14 +16,14 @@ namespace Platformer.Mechanics {
         // Update is called once per frame
         void OnTriggerEnter2D (Collider2D other) {
             if (other.tag == "Player") {
-                player.onDoor = true;
-                anim.SetBool("doorISopen",true);
+                player.onDoor = ;
+                //anim.SetBool("doorISopen",true);
             }
         }
 
         void OnTriggerExit2D (Collider2D other) {
             if (other.tag == "Player") {
-                player.onDoor = false;
+                player.onDoor = 0;
                 anim.SetBool("doorISopen",false);
             }
         }
