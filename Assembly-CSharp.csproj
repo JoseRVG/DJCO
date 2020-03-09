@@ -69,7 +69,7 @@
      <Compile Include="Assets\Scripts\Gameplay\EnablePlayerInput.cs" />
      <Compile Include="Assets\Scripts\Gameplay\EnemyDeath.cs" />
      <Compile Include="Assets\Scripts\Gameplay\GameOver.cs" />
-     <Compile Include="Assets\Scripts\Gameplay\Grades.cs" />
+     <Compile Include="Assets\Scripts\Gameplay\GradesPro.cs" />
      <Compile Include="Assets\Scripts\Gameplay\HealthIsZero.cs" />
      <Compile Include="Assets\Scripts\Gameplay\PlayerDeath.cs" />
      <Compile Include="Assets\Scripts\Gameplay\PlayerEnemyCollision.cs" />
