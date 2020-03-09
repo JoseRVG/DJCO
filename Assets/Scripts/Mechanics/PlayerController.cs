@@ -80,7 +80,6 @@ namespace Platformer.Mechanics {
                         onDoor = false;
                         RandomDoor ();
                     }
-                    print (grades);
                 }
             } else if (!onDoor) {
 
@@ -129,13 +128,14 @@ namespace Platformer.Mechanics {
         }
 
         protected override void ComputeVelocity () {
+
             if (jump && IsGrounded) {
-                velocity.y = jumpTakeOffSpeed * model.jumpModifier;
+                velocity.y = jumpTakeOffSpeed * model.jumpModifier/1.5f;
                 jump = false;
             } else if (stopJump) {
                 stopJump = false;
                 if (velocity.y > 0) {
-                    velocity.y = velocity.y * model.jumpDeceleration;
+                    velocity.y = velocity.y * model.jumpDeceleration/1.5f;
                 }
             }
 
@@ -146,17 +146,29 @@ namespace Platformer.Mechanics {
 
             if (onLadder) {
                 gravityModifier = 0f;
-                if (Input.GetKeyDown (KeyCode.W) || Input.GetKeyDown (KeyCode.UpArrow) || Input.GetKeyDown (KeyCode.Space)) {
-                    velocity.y = 2f;
+                if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.Space))
+                {
+                    velocity.y = 5f;
                     jumpState = JumpState.InFlight;
-                    if (Input.GetKeyDown (KeyCode.Q)) {
+                    if (Input.GetKeyDown(KeyCode.Q))
+                    {
                         targetVelocity = move * (maxSpeed * 2);
 
-                    } else {
+                    }
+                    else
+                    {
                         targetVelocity = move * maxSpeed;
                     }
-                } else if (Input.GetKey (KeyCode.DownArrow) || Input.GetKey (KeyCode.S))
+                }
+                else if (Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.S))
+                {
                     gravityModifier = 1f;
+                    S_pressed = true;
+                }
+                else if (Input.GetKeyUp(KeyCode.DownArrow) || Input.GetKeyUp(KeyCode.S))
+                {
+                    S_pressed = false;
+                }
             } else if (!onLadder) {
                 jumpState = JumpState.Grounded;
                 gravityModifier = 1f;

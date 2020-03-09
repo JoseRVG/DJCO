@@ -17,6 +17,7 @@ namespace Platformer.Mechanics {
         /// </summary>
         public float gravityModifier = 1f;
         public bool onLadder = false;
+        public bool S_pressed = false;
 
         /// <summary>
         /// The current velocity of the entity.
@@ -37,6 +38,8 @@ namespace Platformer.Mechanics {
 
         protected const float minMoveDistance = 0.001f;
         protected const float shellRadius = 0.01f;
+
+        
 
         /// <summary>
         /// Bounce the object's vertical velocity.
@@ -82,6 +85,7 @@ namespace Platformer.Mechanics {
 
         protected virtual void Update () {
             targetVelocity = Vector2.zero;
+            print(targetVelocity);
             ComputeVelocity ();
         }
 
@@ -95,8 +99,23 @@ namespace Platformer.Mechanics {
                 velocity += gravityModifier * Physics2D.gravity * Time.deltaTime;
             else
                 velocity += Physics2D.gravity * Time.deltaTime;
+            print(velocity+" velocity");
 
             velocity.x = targetVelocity.x;
+            if (onLadder==true)
+            {
+                if (S_pressed==true)
+                {
+                    velocity.y = -2f;
+                }
+                else if (velocity.y<0)
+                {
+                    velocity.y = 0;
+                }
+            }
+
+            print(velocity + " velocity after");
+
 
             IsGrounded = false;
 

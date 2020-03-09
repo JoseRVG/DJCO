@@ -48128,6 +48128,11 @@ PrefabInstance:
       propertyPath: itens
       value: 
       objectReference: {fileID: 1393768552}
+    - target: {fileID: 114230831923080080, guid: 7d60c822c3f1b408ea7a00ecdb5e047a,
+        type: 3}
+      propertyPath: gravityModifier
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6082575806313374961, guid: 7d60c822c3f1b408ea7a00ecdb5e047a,
         type: 3}
       propertyPath: maxHP
@@ -50590,7 +50595,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1815426855}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.14400001}
 --- !u!114 &1173502583
 MonoBehaviour:
@@ -53702,7 +53707,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1815426855}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.14400001}
 --- !u!1 &1634120162
 GameObject:
@@ -55213,8 +55218,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1173502582}
   - {fileID: 1620406958}
+  - {fileID: 1173502582}
   - {fileID: 2029796929}
   - {fileID: 1845791239}
   - {fileID: 1789633372}
