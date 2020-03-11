@@ -36,7 +36,10 @@ namespace Platformer.Mechanics {
         public bool onDoor;
         public bool DoorControl = false;
         public int DoorNum;
+        public int ObstacleNum;
         public int grades = 5;
+        private List<int> ObstacleUsed = new List<int> ();
+        private bool ObstacleController = false;
         private float waitHP = 5f;
         private float lastRegenHP = 1f / 5f;
 
@@ -48,7 +51,7 @@ namespace Platformer.Mechanics {
         SpriteRenderer spriteRenderer;
         internal Animator animator;
         readonly PlatformerModel model = Simulation.GetModel<PlatformerModel> ();
-
+        public GameObject obs;
         public Bounds Bounds => collider2d.bounds;
 
         void Awake () {
@@ -57,6 +60,8 @@ namespace Platformer.Mechanics {
             collider2d = GetComponent<Collider2D> ();
             spriteRenderer = GetComponent<SpriteRenderer> ();
             animator = GetComponent<Animator> ();
+            
+            obs.SetActive (false);
             RandomDoor ();
         }
 
@@ -79,10 +84,13 @@ namespace Platformer.Mechanics {
                         grades = grades - 1;
                         onDoor = false;
                         RandomDoor ();
+                        RandomObstacle ();
+                        obs.SetActive (true);
+                        
                     }
                 }
             } else if (!onDoor) {
-
+                ObstacleController = false;
             }
 
             if (health.currentHP < health.maxHP)
@@ -130,12 +138,12 @@ namespace Platformer.Mechanics {
         protected override void ComputeVelocity () {
 
             if (jump && IsGrounded) {
-                velocity.y = jumpTakeOffSpeed * model.jumpModifier/1.5f;
+                velocity.y = jumpTakeOffSpeed * model.jumpModifier / 1.5f;
                 jump = false;
             } else if (stopJump) {
                 stopJump = false;
                 if (velocity.y > 0) {
-                    velocity.y = velocity.y * model.jumpDeceleration/1.5f;
+                    velocity.y = velocity.y * model.jumpDeceleration / 1.5f;
                 }
             }
 
@@ -146,27 +154,19 @@ namespace Platformer.Mechanics {
 
             if (onLadder) {
                 gravityModifier = 0f;
-                if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.Space))
-                {
+                if (Input.GetKeyDown (KeyCode.W) || Input.GetKeyDown (KeyCode.UpArrow) || Input.GetKeyDown (KeyCode.Space)) {
                     velocity.y = 5f;
                     jumpState = JumpState.InFlight;
-                    if (Input.GetKeyDown(KeyCode.Q))
-                    {
+                    if (Input.GetKeyDown (KeyCode.Q)) {
                         targetVelocity = move * (maxSpeed * 2);
 
-                    }
-                    else
-                    {
+                    } else {
                         targetVelocity = move * maxSpeed;
                     }
-                }
-                else if (Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.S))
-                {
+                } else if (Input.GetKeyDown (KeyCode.DownArrow) || Input.GetKeyDown (KeyCode.S)) {
                     gravityModifier = 1f;
                     S_pressed = true;
-                }
-                else if (Input.GetKeyUp(KeyCode.DownArrow) || Input.GetKeyUp(KeyCode.S))
-                {
+                } else if (Input.GetKeyUp (KeyCode.DownArrow) || Input.GetKeyUp (KeyCode.S)) {
                     S_pressed = false;
                 }
             } else if (!onLadder) {
@@ -326,6 +326,28 @@ namespace Platformer.Mechanics {
                     DoorNum = 311;
                     break;
             }
+        }
+
+        void RandomObstacle () {
+            int i = Random.Range (1, 3);
+            print ("size " + ObstacleUsed.Count);
+            if (ObstacleUsed.Count != 0) {
+                while (!ObstacleController) {
+                    if (ObstacleUsed.Contains (i)) {
+                        print ("Try again new trap number");
+                        i = Random.Range (1, 3);
+                    } else if (ObstacleUsed.Count == 2) {
+                        ObstacleController = true;
+                    } else {
+                        ObstacleController = true;
+                        print ("obs number " + i);
+                        ObstacleUsed.Add (i);
+                    }
+                }
+            } else if (ObstacleUsed.Count == 0) {
+                print ("obs number " + i);
+                ObstacleUsed.Add (i);
+            } 
         }
 
         public enum JumpState {

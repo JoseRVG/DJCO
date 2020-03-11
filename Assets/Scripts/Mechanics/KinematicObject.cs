@@ -85,7 +85,6 @@ namespace Platformer.Mechanics {
 
         protected virtual void Update () {
             targetVelocity = Vector2.zero;
-            print(targetVelocity);
             ComputeVelocity ();
         }
 
@@ -99,7 +98,6 @@ namespace Platformer.Mechanics {
                 velocity += gravityModifier * Physics2D.gravity * Time.deltaTime;
             else
                 velocity += Physics2D.gravity * Time.deltaTime;
-            print(velocity+" velocity");
 
             velocity.x = targetVelocity.x;
             if (onLadder==true)
@@ -113,9 +111,6 @@ namespace Platformer.Mechanics {
                     velocity.y = 0;
                 }
             }
-
-            print(velocity + " velocity after");
-
 
             IsGrounded = false;
 

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Enemy
   - Door
+  - obs1
   layers:
   - Default
   - TransparentFX
