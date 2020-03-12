@@ -23,6 +23,8 @@ namespace Platformer.Mechanics
 
         public Bounds Bounds => _collider.bounds;
 
+       // public bool onLadder=true;
+
         void Awake()
         {
             control = GetComponent<AnimationController>();
@@ -49,6 +51,7 @@ namespace Platformer.Mechanics
                 if (mover == null) mover = path.CreateMover(control.maxSpeed * 0.5f);
                 control.move.x = Mathf.Clamp(mover.Position.x - transform.position.x, -1, 1);
             }
+            transform.eulerAngles = new Vector3(0, transform.eulerAngles.y, 0);
         }
 
     }

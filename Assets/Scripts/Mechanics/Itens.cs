@@ -17,7 +17,7 @@ namespace Platformer.Mechanics {
         void OnTriggerEnter2D (Collider2D other) {
             if (other.tag == "Player") {
                 player.onDoor = true;
-                if(ID==player.DoorNum){
+                if(ID == System.Int32.Parse(player.DoorNum)){
                     player.DoorControl = true;
                     anim.SetBool("doorISopen",true);
                     
