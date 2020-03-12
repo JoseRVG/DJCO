@@ -1030,14 +1030,13 @@ GameObject:
   - component: {fileID: 58633208}
   - component: {fileID: 58633211}
   - component: {fileID: 58633210}
-  - component: {fileID: 58633209}
   m_Layer: 0
   m_Name: obs23
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &58633208
 Transform:
   m_ObjectHideFlags: 0
@@ -1052,20 +1051,6 @@ Transform:
   m_Father: {fileID: 1442040256}
   m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &58633209
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 58633207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 63163b8e82f29f14ca48c394cf1e7ccc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ID: 0
-  obs: {fileID: 0}
 --- !u!61 &58633210
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1751,14 +1736,13 @@ GameObject:
   - component: {fileID: 157762846}
   - component: {fileID: 157762847}
   - component: {fileID: 157762849}
-  - component: {fileID: 157762848}
   m_Layer: 0
   m_Name: obs9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &157762846
 Transform:
   m_ObjectHideFlags: 0
@@ -1821,20 +1805,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &157762848
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 157762845}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 63163b8e82f29f14ca48c394cf1e7ccc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ID: 0
-  obs: {fileID: 0}
 --- !u!61 &157762849
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1872,14 +1842,13 @@ GameObject:
   - component: {fileID: 167015651}
   - component: {fileID: 167015654}
   - component: {fileID: 167015653}
-  - component: {fileID: 167015652}
   m_Layer: 0
   m_Name: obs19
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &167015651
 Transform:
   m_ObjectHideFlags: 0
@@ -1894,20 +1863,6 @@ Transform:
   m_Father: {fileID: 1442040256}
   m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &167015652
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 167015650}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 63163b8e82f29f14ca48c394cf1e7ccc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ID: 0
-  obs: {fileID: 0}
 --- !u!61 &167015653
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2652,14 +2607,13 @@ GameObject:
   - component: {fileID: 230432158}
   - component: {fileID: 230432159}
   - component: {fileID: 230432161}
-  - component: {fileID: 230432160}
   m_Layer: 0
   m_Name: obs18
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &230432158
 Transform:
   m_ObjectHideFlags: 0
@@ -2722,20 +2676,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &230432160
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 230432157}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 63163b8e82f29f14ca48c394cf1e7ccc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ID: 0
-  obs: {fileID: 0}
 --- !u!61 &230432161
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -24875,14 +24815,13 @@ GameObject:
   - component: {fileID: 406010341}
   - component: {fileID: 406010344}
   - component: {fileID: 406010343}
-  - component: {fileID: 406010342}
   m_Layer: 0
   m_Name: obs21
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &406010341
 Transform:
   m_ObjectHideFlags: 0
@@ -24897,20 +24836,6 @@ Transform:
   m_Father: {fileID: 1442040256}
   m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &406010342
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 406010340}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 63163b8e82f29f14ca48c394cf1e7ccc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ID: 0
-  obs: {fileID: 0}
 --- !u!61 &406010343
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -25385,14 +25310,13 @@ GameObject:
   m_Component:
   - component: {fileID: 463384013}
   - component: {fileID: 463384014}
-  - component: {fileID: 463384015}
   m_Layer: 0
   m_Name: obs5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &463384013
 Transform:
   m_ObjectHideFlags: 0
@@ -25455,20 +25379,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &463384015
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 463384012}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 63163b8e82f29f14ca48c394cf1e7ccc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ID: 0
-  obs: {fileID: 0}
 --- !u!1 &463473568
 GameObject:
   m_ObjectHideFlags: 0
@@ -27392,14 +27302,13 @@ GameObject:
   m_Component:
   - component: {fileID: 614759417}
   - component: {fileID: 614759418}
-  - component: {fileID: 614759419}
   m_Layer: 0
   m_Name: obs4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &614759417
 Transform:
   m_ObjectHideFlags: 0
@@ -27462,20 +27371,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &614759419
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 614759416}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 63163b8e82f29f14ca48c394cf1e7ccc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ID: 0
-  obs: {fileID: 0}
 --- !u!1 &621963770
 GameObject:
   m_ObjectHideFlags: 0
@@ -48753,14 +48648,13 @@ GameObject:
   - component: {fileID: 738394854}
   - component: {fileID: 738394855}
   - component: {fileID: 738394857}
-  - component: {fileID: 738394856}
   m_Layer: 0
   m_Name: obs17
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &738394854
 Transform:
   m_ObjectHideFlags: 0
@@ -48823,20 +48717,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &738394856
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 738394853}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 63163b8e82f29f14ca48c394cf1e7ccc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ID: 0
-  obs: {fileID: 0}
 --- !u!61 &738394857
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -49374,112 +49254,112 @@ PrefabInstance:
         type: 3}
       propertyPath: obs2
       value: 
-      objectReference: {fileID: 1481006560}
+      objectReference: {fileID: 1481006557}
     - target: {fileID: 114230831923080080, guid: 7d60c822c3f1b408ea7a00ecdb5e047a,
         type: 3}
       propertyPath: obs3
       value: 
-      objectReference: {fileID: 1438575366}
+      objectReference: {fileID: 1438575363}
     - target: {fileID: 114230831923080080, guid: 7d60c822c3f1b408ea7a00ecdb5e047a,
         type: 3}
       propertyPath: obs4
       value: 
-      objectReference: {fileID: 614759419}
+      objectReference: {fileID: 614759416}
     - target: {fileID: 114230831923080080, guid: 7d60c822c3f1b408ea7a00ecdb5e047a,
         type: 3}
       propertyPath: obs5
       value: 
-      objectReference: {fileID: 463384015}
+      objectReference: {fileID: 463384012}
     - target: {fileID: 114230831923080080, guid: 7d60c822c3f1b408ea7a00ecdb5e047a,
         type: 3}
       propertyPath: obs6
       value: 
-      objectReference: {fileID: 1328245642}
+      objectReference: {fileID: 1328245639}
     - target: {fileID: 114230831923080080, guid: 7d60c822c3f1b408ea7a00ecdb5e047a,
         type: 3}
       propertyPath: obs7
       value: 
-      objectReference: {fileID: 1000423269}
+      objectReference: {fileID: 1000423266}
     - target: {fileID: 114230831923080080, guid: 7d60c822c3f1b408ea7a00ecdb5e047a,
         type: 3}
       propertyPath: obs8
       value: 
-      objectReference: {fileID: 1488546788}
+      objectReference: {fileID: 1488546785}
     - target: {fileID: 114230831923080080, guid: 7d60c822c3f1b408ea7a00ecdb5e047a,
         type: 3}
       propertyPath: obs9
       value: 
-      objectReference: {fileID: 157762848}
+      objectReference: {fileID: 157762845}
     - target: {fileID: 114230831923080080, guid: 7d60c822c3f1b408ea7a00ecdb5e047a,
         type: 3}
       propertyPath: obs10
       value: 
-      objectReference: {fileID: 1548403182}
+      objectReference: {fileID: 1548403179}
     - target: {fileID: 114230831923080080, guid: 7d60c822c3f1b408ea7a00ecdb5e047a,
         type: 3}
       propertyPath: obs11
       value: 
-      objectReference: {fileID: 2126891111}
+      objectReference: {fileID: 2126891108}
     - target: {fileID: 114230831923080080, guid: 7d60c822c3f1b408ea7a00ecdb5e047a,
         type: 3}
       propertyPath: obs12
       value: 
-      objectReference: {fileID: 1686646379}
+      objectReference: {fileID: 1686646376}
     - target: {fileID: 114230831923080080, guid: 7d60c822c3f1b408ea7a00ecdb5e047a,
         type: 3}
       propertyPath: obs13
       value: 
-      objectReference: {fileID: 1729175457}
+      objectReference: {fileID: 1729175454}
     - target: {fileID: 114230831923080080, guid: 7d60c822c3f1b408ea7a00ecdb5e047a,
         type: 3}
       propertyPath: obs14
       value: 
-      objectReference: {fileID: 1377078036}
+      objectReference: {fileID: 1377078033}
     - target: {fileID: 114230831923080080, guid: 7d60c822c3f1b408ea7a00ecdb5e047a,
         type: 3}
       propertyPath: obs15
       value: 
-      objectReference: {fileID: 1390069480}
+      objectReference: {fileID: 1390069477}
     - target: {fileID: 114230831923080080, guid: 7d60c822c3f1b408ea7a00ecdb5e047a,
         type: 3}
       propertyPath: obs16
       value: 
-      objectReference: {fileID: 903033334}
+      objectReference: {fileID: 903033331}
     - target: {fileID: 114230831923080080, guid: 7d60c822c3f1b408ea7a00ecdb5e047a,
         type: 3}
       propertyPath: obs17
       value: 
-      objectReference: {fileID: 738394856}
+      objectReference: {fileID: 738394853}
     - target: {fileID: 114230831923080080, guid: 7d60c822c3f1b408ea7a00ecdb5e047a,
         type: 3}
       propertyPath: obs18
       value: 
-      objectReference: {fileID: 230432160}
+      objectReference: {fileID: 230432157}
     - target: {fileID: 114230831923080080, guid: 7d60c822c3f1b408ea7a00ecdb5e047a,
         type: 3}
       propertyPath: obs19
       value: 
-      objectReference: {fileID: 167015652}
+      objectReference: {fileID: 167015650}
     - target: {fileID: 114230831923080080, guid: 7d60c822c3f1b408ea7a00ecdb5e047a,
         type: 3}
       propertyPath: obs20
       value: 
-      objectReference: {fileID: 1184214136}
+      objectReference: {fileID: 1184214134}
     - target: {fileID: 114230831923080080, guid: 7d60c822c3f1b408ea7a00ecdb5e047a,
         type: 3}
       propertyPath: obs21
       value: 
-      objectReference: {fileID: 406010342}
+      objectReference: {fileID: 406010340}
     - target: {fileID: 114230831923080080, guid: 7d60c822c3f1b408ea7a00ecdb5e047a,
         type: 3}
       propertyPath: obs22
       value: 
-      objectReference: {fileID: 874822508}
+      objectReference: {fileID: 874822506}
     - target: {fileID: 114230831923080080, guid: 7d60c822c3f1b408ea7a00ecdb5e047a,
         type: 3}
       propertyPath: obs23
       value: 
-      objectReference: {fileID: 58633209}
+      objectReference: {fileID: 58633207}
     - target: {fileID: 114230831923080080, guid: 7d60c822c3f1b408ea7a00ecdb5e047a,
         type: 3}
       propertyPath: obs
@@ -49702,14 +49582,13 @@ GameObject:
   - component: {fileID: 874822507}
   - component: {fileID: 874822510}
   - component: {fileID: 874822509}
-  - component: {fileID: 874822508}
   m_Layer: 0
   m_Name: obs22
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &874822507
 Transform:
   m_ObjectHideFlags: 0
@@ -49724,20 +49603,6 @@ Transform:
   m_Father: {fileID: 1442040256}
   m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &874822508
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 874822506}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 63163b8e82f29f14ca48c394cf1e7ccc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ID: 0
-  obs: {fileID: 0}
 --- !u!61 &874822509
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -50198,14 +50063,13 @@ GameObject:
   - component: {fileID: 903033332}
   - component: {fileID: 903033333}
   - component: {fileID: 903033335}
-  - component: {fileID: 903033334}
   m_Layer: 0
   m_Name: obs16
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &903033332
 Transform:
   m_ObjectHideFlags: 0
@@ -50268,20 +50132,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &903033334
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 903033331}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 63163b8e82f29f14ca48c394cf1e7ccc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ID: 0
-  obs: {fileID: 0}
 --- !u!61 &903033335
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -51361,14 +51211,13 @@ GameObject:
   m_Component:
   - component: {fileID: 1000423267}
   - component: {fileID: 1000423268}
-  - component: {fileID: 1000423269}
   m_Layer: 0
   m_Name: obs7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1000423267
 Transform:
   m_ObjectHideFlags: 0
@@ -51431,20 +51280,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1000423269
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1000423266}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 63163b8e82f29f14ca48c394cf1e7ccc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ID: 0
-  obs: {fileID: 0}
 --- !u!1 &1000675850
 GameObject:
   m_ObjectHideFlags: 0
@@ -52403,14 +52238,13 @@ GameObject:
   - component: {fileID: 1184214135}
   - component: {fileID: 1184214138}
   - component: {fileID: 1184214137}
-  - component: {fileID: 1184214136}
   m_Layer: 0
   m_Name: obs20
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1184214135
 Transform:
   m_ObjectHideFlags: 0
@@ -52425,20 +52259,6 @@ Transform:
   m_Father: {fileID: 1442040256}
   m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1184214136
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1184214134}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 63163b8e82f29f14ca48c394cf1e7ccc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ID: 0
-  obs: {fileID: 0}
 --- !u!61 &1184214137
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -52568,7 +52388,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1192527241}
   - component: {fileID: 1192527242}
-  - component: {fileID: 1192527243}
   m_Layer: 0
   m_Name: Obs1
   m_TagString: obs1
@@ -52638,20 +52457,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1192527243
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1192527240}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 63163b8e82f29f14ca48c394cf1e7ccc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ID: 1
-  obs: {fileID: 1192527240}
 --- !u!1001 &1198827148
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -53799,14 +53604,13 @@ GameObject:
   m_Component:
   - component: {fileID: 1328245640}
   - component: {fileID: 1328245641}
-  - component: {fileID: 1328245642}
   m_Layer: 0
   m_Name: obs6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1328245640
 Transform:
   m_ObjectHideFlags: 0
@@ -53869,20 +53673,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1328245642
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1328245639}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 63163b8e82f29f14ca48c394cf1e7ccc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ID: 0
-  obs: {fileID: 0}
 --- !u!1001 &1346969956
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -54251,14 +54041,13 @@ GameObject:
   - component: {fileID: 1377078034}
   - component: {fileID: 1377078035}
   - component: {fileID: 1377078037}
-  - component: {fileID: 1377078036}
   m_Layer: 0
   m_Name: obs14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1377078034
 Transform:
   m_ObjectHideFlags: 0
@@ -54321,20 +54110,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1377078036
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1377078033}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 63163b8e82f29f14ca48c394cf1e7ccc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ID: 0
-  obs: {fileID: 0}
 --- !u!61 &1377078037
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -54372,14 +54147,13 @@ GameObject:
   - component: {fileID: 1390069478}
   - component: {fileID: 1390069479}
   - component: {fileID: 1390069481}
-  - component: {fileID: 1390069480}
   m_Layer: 0
   m_Name: obs15
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1390069478
 Transform:
   m_ObjectHideFlags: 0
@@ -54442,20 +54216,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1390069480
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1390069477}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 63163b8e82f29f14ca48c394cf1e7ccc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ID: 0
-  obs: {fileID: 0}
 --- !u!61 &1390069481
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -54801,14 +54561,13 @@ GameObject:
   m_Component:
   - component: {fileID: 1438575364}
   - component: {fileID: 1438575365}
-  - component: {fileID: 1438575366}
   m_Layer: 0
   m_Name: obs3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1438575364
 Transform:
   m_ObjectHideFlags: 0
@@ -54871,20 +54630,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1438575366
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1438575363}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 63163b8e82f29f14ca48c394cf1e7ccc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ID: 0
-  obs: {fileID: 0}
 --- !u!1 &1440689613 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4552244453235969054, guid: f9856db9d2569264ea1b2baf162e79cb,
@@ -55157,7 +54902,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1481006558}
   - component: {fileID: 1481006559}
-  - component: {fileID: 1481006560}
   m_Layer: 0
   m_Name: obs2
   m_TagString: Untagged
@@ -55227,20 +54971,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1481006560
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1481006557}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 63163b8e82f29f14ca48c394cf1e7ccc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ID: 2
-  obs: {fileID: 1481006557}
 --- !u!1 &1486367915
 GameObject:
   m_ObjectHideFlags: 0
@@ -55343,14 +55073,13 @@ GameObject:
   - component: {fileID: 1488546786}
   - component: {fileID: 1488546787}
   - component: {fileID: 1488546789}
-  - component: {fileID: 1488546788}
   m_Layer: 0
   m_Name: obs8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1488546786
 Transform:
   m_ObjectHideFlags: 0
@@ -55413,20 +55142,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1488546788
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1488546785}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 63163b8e82f29f14ca48c394cf1e7ccc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ID: 0
-  obs: {fileID: 0}
 --- !u!61 &1488546789
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -55775,14 +55490,13 @@ GameObject:
   - component: {fileID: 1548403180}
   - component: {fileID: 1548403181}
   - component: {fileID: 1548403183}
-  - component: {fileID: 1548403182}
   m_Layer: 0
   m_Name: obs10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1548403180
 Transform:
   m_ObjectHideFlags: 0
@@ -55845,20 +55559,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1548403182
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1548403179}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 63163b8e82f29f14ca48c394cf1e7ccc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ID: 0
-  obs: {fileID: 0}
 --- !u!61 &1548403183
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -57080,14 +56780,13 @@ GameObject:
   - component: {fileID: 1686646377}
   - component: {fileID: 1686646378}
   - component: {fileID: 1686646380}
-  - component: {fileID: 1686646379}
   m_Layer: 0
   m_Name: obs12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1686646377
 Transform:
   m_ObjectHideFlags: 0
@@ -57150,20 +56849,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1686646379
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1686646376}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 63163b8e82f29f14ca48c394cf1e7ccc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ID: 0
-  obs: {fileID: 0}
 --- !u!61 &1686646380
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -57630,14 +57315,13 @@ GameObject:
   - component: {fileID: 1729175455}
   - component: {fileID: 1729175456}
   - component: {fileID: 1729175458}
-  - component: {fileID: 1729175457}
   m_Layer: 0
   m_Name: obs13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1729175455
 Transform:
   m_ObjectHideFlags: 0
@@ -57700,20 +57384,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1729175457
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1729175454}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 63163b8e82f29f14ca48c394cf1e7ccc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ID: 0
-  obs: {fileID: 0}
 --- !u!61 &1729175458
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -60518,14 +60188,13 @@ GameObject:
   - component: {fileID: 2126891109}
   - component: {fileID: 2126891110}
   - component: {fileID: 2126891112}
-  - component: {fileID: 2126891111}
   m_Layer: 0
   m_Name: obs11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2126891109
 Transform:
   m_ObjectHideFlags: 0
@@ -60588,20 +60257,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2126891111
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2126891108}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 63163b8e82f29f14ca48c394cf1e7ccc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ID: 0
-  obs: {fileID: 0}
 --- !u!61 &2126891112
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -46,12 +46,36 @@ namespace Platformer.Mechanics {
         private float wait = 1f / 5f;
         private float lastRegen = 1f / 5f;
 
+        public GameObject obs1;
+        public GameObject obs2;
+        public GameObject obs3;
+        public GameObject obs4;
+        public GameObject obs5;
+        public GameObject obs6;
+        public GameObject obs7;
+        public GameObject obs8;
+        public GameObject obs9;
+        public GameObject obs10;
+        public GameObject obs11;
+        public GameObject obs12;
+        public GameObject obs13;
+        public GameObject obs14;
+        public GameObject obs15;
+        public GameObject obs16;
+        public GameObject obs17;
+        public GameObject obs18;
+        public GameObject obs19;
+        public GameObject obs20;
+        public GameObject obs21;
+        public GameObject obs22;
+        public GameObject obs23;
+
         bool jump;
         Vector2 move;
         SpriteRenderer spriteRenderer;
         internal Animator animator;
         readonly PlatformerModel model = Simulation.GetModel<PlatformerModel> ();
-        public GameObject obs;
+
         public Bounds Bounds => collider2d.bounds;
 
         void Awake () {
@@ -60,8 +84,6 @@ namespace Platformer.Mechanics {
             collider2d = GetComponent<Collider2D> ();
             spriteRenderer = GetComponent<SpriteRenderer> ();
             animator = GetComponent<Animator> ();
-            
-            obs.SetActive (false);
             RandomDoor ();
         }
 
@@ -85,8 +107,6 @@ namespace Platformer.Mechanics {
                         onDoor = false;
                         RandomDoor ();
                         RandomObstacle ();
-                        obs.SetActive (true);
-                        
                     }
                 }
             } else if (!onDoor) {
@@ -329,25 +349,101 @@ namespace Platformer.Mechanics {
         }
 
         void RandomObstacle () {
-            int i = Random.Range (1, 3);
+            int i = Random.Range (1, 24);
             print ("size " + ObstacleUsed.Count);
             if (ObstacleUsed.Count != 0) {
                 while (!ObstacleController) {
                     if (ObstacleUsed.Contains (i)) {
                         print ("Try again new trap number");
-                        i = Random.Range (1, 3);
-                    } else if (ObstacleUsed.Count == 2) {
+                        i = Random.Range (1, 24);
+                    } else if (ObstacleUsed.Count == 23) {
                         ObstacleController = true;
                     } else {
                         ObstacleController = true;
                         print ("obs number " + i);
                         ObstacleUsed.Add (i);
+                        obstacleChosen (i);
                     }
                 }
             } else if (ObstacleUsed.Count == 0) {
                 print ("obs number " + i);
                 ObstacleUsed.Add (i);
-            } 
+                obstacleChosen (i);
+            }
+        }
+
+        void obstacleChosen (int i) {
+            switch (i) {
+                case 1:
+                   obs1.SetActive(true);
+                    break;
+                case 2:
+                    obs2.SetActive(true);
+                    break;
+                case 3:
+                    obs3.SetActive(true);
+                    break;
+                case 4:
+                    obs4.SetActive(true);
+                    break;
+                case 5:
+                    obs5.SetActive(true);
+                    break;
+                case 6:
+                    obs6.SetActive(true);
+                    break;
+                case 7:
+                    obs7.SetActive(true);
+                    break;
+                case 8:
+                    obs8.SetActive(true);
+                    break;
+                case 9:
+                    obs9.SetActive(true);
+                    break;
+                case 10:
+                    obs10.SetActive(true);
+                    break;
+                case 11:
+                    obs11.SetActive(true);
+                    break;
+                case 12:
+                    obs12.SetActive(true);
+                    break;
+                case 13:
+                    obs13.SetActive(true);
+                    break;
+                case 14:
+                    obs14.SetActive(true);
+                    break;
+                case 15:
+                    obs15.SetActive(true);
+                    break;
+                case 16:
+                    obs16.SetActive(true);
+                    break;
+                case 17:
+                    obs17.SetActive(true);
+                    break;
+                case 18:
+                    obs18.SetActive(true);
+                    break;
+                case 19:
+                    obs19.SetActive(true);
+                    break;
+                case 20:
+                    obs20.SetActive(true);
+                    break;
+                case 21:
+                    obs21.SetActive(true);
+                    break;
+                case 22:
+                    obs22.SetActive(true);
+                    break;
+                case 23:
+                    obs23.SetActive(true);
+                    break;
+            }
         }
 
         public enum JumpState {
