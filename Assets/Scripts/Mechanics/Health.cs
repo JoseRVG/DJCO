@@ -2,6 +2,8 @@ using System;
 using Platformer.Gameplay;
 using UnityEngine;
 using static Platformer.Core.Simulation;
+using Platformer.Core;
+using Platformer.Model;
 using UnityEngine.UI;
 
 namespace Platformer.Mechanics {
@@ -19,6 +21,7 @@ namespace Platformer.Mechanics {
         private int regeneration = 1;
         [SerializeField]
         private GameObject gameOverUI;
+        private Timer timer;
 
         /// <summary>
         /// Indicates if the entity should be considered 'alive'.
@@ -32,6 +35,11 @@ namespace Platformer.Mechanics {
         /// <summary>
         /// Increment the HP of the entity.
         /// </summary>
+
+        void Start () {
+            timer = FindObjectOfType<Timer> ();
+        }
+
         public void Increment () {
             currentHP += regeneration;
             if (currentHP > maxHP)
@@ -58,7 +66,8 @@ namespace Platformer.Mechanics {
             if (currentHP == 0) {
                 var ev = Schedule<HealthIsZero> ();
                 ev.health = this;
-                EndGame();
+                timer.timeStart = 0;
+                EndGame ();
             }
         }
 
@@ -72,12 +81,15 @@ namespace Platformer.Mechanics {
         /// </summary>
         public void Die () {
             while (currentHP > 0)
-            Decrement ();
+                Decrement ();
         }
 
         public void EndGame () {
-            Debug.Log("END");
-            anim.SetBool("End",true);
+            Debug.Log ("END");
+            anim.SetBool ("End", true);
+            PlatformerModel model = Simulation.GetModel<PlatformerModel> ();
+            var player = model.player;
+            player.controlEnabled = false;
         }
 
         void Awake () {

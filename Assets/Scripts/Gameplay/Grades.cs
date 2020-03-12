@@ -14,7 +14,9 @@ namespace Platformer.Gameplay {
 
         // Update is called once per frame
         void Update () {
-
+            if(startingGrades == 0){
+                
+            }
         }
     }
 }

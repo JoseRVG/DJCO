@@ -4,10 +4,13 @@ using Platformer.Mechanics;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using Platformer.Model;
+using Platformer.Core;
 
 namespace Platformer.Gameplay {
     public class Timer : MonoBehaviour {
         public float timeStart = 60;
+        public string timerBackup;
         public TextMeshProUGUI textBox;
         public Transform TimerBar;
         public bool tictocflag;
@@ -32,6 +35,7 @@ namespace Platformer.Gameplay {
             if (timeStart > 0) {
                 timeStart -= Time.deltaTime;
                 textBox.text = Mathf.Round (timeStart).ToString ();
+                timerBackup = Mathf.Round (timeStart).ToString ();
                 TimerBar.GetComponent<Image> ().fillAmount += Time.deltaTime;
                 if (TimerBar.GetComponent<Image> ().fillAmount >= 1) {
                     audioData.clip = tictoc;
@@ -50,8 +54,11 @@ namespace Platformer.Gameplay {
                     }
                 }
             } else {
-                textBox.text = "0";
+                textBox.text = timerBackup;
                 health.EndGame ();
+                PlatformerModel model = Simulation.GetModel<PlatformerModel> ();
+                var player = model.player;
+                player.controlEnabled = false;
             }
         }
     }
