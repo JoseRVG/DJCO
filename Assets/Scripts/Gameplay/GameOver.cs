@@ -7,6 +7,7 @@ namespace Platformer.Gameplay {
     public class GameOver : MonoBehaviour {
         public void Exit () {
             Debug.Log ("Aplication Exit");
+            UnityEditor.EditorApplication.isPlaying = false;
             Application.Quit ();
         }
 
