@@ -31,6 +31,7 @@ namespace Platformer.Mechanics {
         public int currentHP;
         public int currentStamina;
         public Animator anim;
+        public Animator vic;
 
         /// <summary>
         /// Increment the HP of the entity.
@@ -90,6 +91,11 @@ namespace Platformer.Mechanics {
             PlatformerModel model = Simulation.GetModel<PlatformerModel> ();
             var player = model.player;
             player.controlEnabled = false;
+        }
+
+        public void Victory () {
+            Debug.Log ("Victory");
+            vic.SetBool ("End", true);
         }
 
         void Awake () {

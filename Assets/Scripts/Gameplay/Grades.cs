@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using static Platformer.Core.Simulation;
 
 namespace Platformer.Gameplay {
     public class NewBehaviourScript : MonoBehaviour {
@@ -14,8 +15,8 @@ namespace Platformer.Gameplay {
 
         // Update is called once per frame
         void Update () {
-            if(startingGrades == 0){
-                
+            if (startingGrades == 0) {
+
             }
         }
     }

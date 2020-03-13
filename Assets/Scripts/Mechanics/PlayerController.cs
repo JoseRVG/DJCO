@@ -127,6 +127,11 @@ namespace Platformer.Mechanics {
                     lastRegen = Time.time;
                 }
 
+            if (grades == 0) {
+                health.Victory ();
+                animator.SetBool ("VictoryAnim", true);
+            }
+
             UpdateJumpState ();
             base.Update ();
         }
@@ -199,7 +204,8 @@ namespace Platformer.Mechanics {
             animator.SetBool ("grounded", IsGrounded);
             animator.SetFloat ("velocityX", Mathf.Abs (velocity.x) / maxSpeed);
 
-            if (Input.GetKey (KeyCode.Q) && (Input.GetKey (KeyCode.RightArrow) || Input.GetKey (KeyCode.LeftArrow))) {
+            if (Input.GetKey (KeyCode.Q) && (Input.GetKey (KeyCode.RightArrow) || Input.GetKey (KeyCode.LeftArrow) || Input.GetKey (KeyCode.A) || Input.GetKey (KeyCode.D))) {
+                print ("SPEED");
                 if (health.currentStamina > 0) {
                     targetVelocity = move * (maxSpeed * 2);
                     health.DecrementStamina ();
@@ -377,74 +383,74 @@ namespace Platformer.Mechanics {
         void obstacleChosen (int i) {
             switch (i) {
                 case 1:
-                   obs1.SetActive(true);
-                    
+                    obs1.SetActive (true);
+
                     break;
                 case 2:
-                    obs2.SetActive(true);
+                    obs2.SetActive (true);
                     break;
                 case 3:
-                    obs3.SetActive(true);
+                    obs3.SetActive (true);
                     break;
                 case 4:
-                    obs4.SetActive(true);
+                    obs4.SetActive (true);
                     break;
                 case 5:
-                    obs5.SetActive(true);
+                    obs5.SetActive (true);
                     break;
                 case 6:
-                    obs6.SetActive(true);
+                    obs6.SetActive (true);
                     break;
                 case 7:
-                    obs7.SetActive(true);
+                    obs7.SetActive (true);
                     break;
                 case 8:
-                    obs8.SetActive(true);
+                    obs8.SetActive (true);
                     break;
                 case 9:
-                    obs9.SetActive(true);
+                    obs9.SetActive (true);
                     break;
                 case 10:
-                    obs10.SetActive(true);
+                    obs10.SetActive (true);
                     break;
                 case 11:
-                    obs11.SetActive(true);
+                    obs11.SetActive (true);
                     break;
                 case 12:
-                    obs12.SetActive(true);
+                    obs12.SetActive (true);
                     break;
                 case 13:
-                    obs13.SetActive(true);
+                    obs13.SetActive (true);
                     break;
                 case 14:
-                    obs14.SetActive(true);
+                    obs14.SetActive (true);
                     break;
                 case 15:
-                    obs15.SetActive(true);
+                    obs15.SetActive (true);
                     break;
                 case 16:
-                    obs16.SetActive(true);
+                    obs16.SetActive (true);
                     break;
                 case 17:
-                    obs17.SetActive(true);
+                    obs17.SetActive (true);
                     break;
                 case 18:
-                    obs18.SetActive(true);
+                    obs18.SetActive (true);
                     break;
                 case 19:
-                    obs19.SetActive(true);
+                    obs19.SetActive (true);
                     break;
                 case 20:
-                    obs20.SetActive(true);
+                    obs20.SetActive (true);
                     break;
                 case 21:
-                    obs21.SetActive(true);
+                    obs21.SetActive (true);
                     break;
                 case 22:
-                    obs22.SetActive(true);
+                    obs22.SetActive (true);
                     break;
                 case 23:
-                    obs23.SetActive(true);
+                    obs23.SetActive (true);
                     break;
             }
         }

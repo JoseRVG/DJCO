@@ -7,6 +7,8 @@ TagManager:
   - Enemy
   - Door
   - obs1
+  - HealthBoost
+  - TimeBoost
   layers:
   - Default
   - TransparentFX
