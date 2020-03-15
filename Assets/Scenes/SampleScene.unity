@@ -448,7 +448,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 14004259}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 270a7d79602256449adc31b48fc9c8a3, type: 3}
+  m_Script: {fileID: 11500000, guid: 14aec0f352bda5f40ba784ae7f87a07d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!61 &14004268
@@ -28634,7 +28634,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 722619645}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 270a7d79602256449adc31b48fc9c8a3, type: 3}
+  m_Script: {fileID: 11500000, guid: 14aec0f352bda5f40ba784ae7f87a07d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!61 &722619654
@@ -49932,7 +49932,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 807502378}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 270a7d79602256449adc31b48fc9c8a3, type: 3}
+  m_Script: {fileID: 11500000, guid: 14aec0f352bda5f40ba784ae7f87a07d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!61 &807502387
@@ -53725,7 +53725,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1189393370}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 270a7d79602256449adc31b48fc9c8a3, type: 3}
+  m_Script: {fileID: 11500000, guid: 14aec0f352bda5f40ba784ae7f87a07d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!61 &1189393379
@@ -57251,7 +57251,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1530952005}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 270a7d79602256449adc31b48fc9c8a3, type: 3}
+  m_Script: {fileID: 11500000, guid: 14aec0f352bda5f40ba784ae7f87a07d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!61 &1530952014
@@ -57713,7 +57713,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: 0
+  m_firstOverflowCharacterIndex: 7
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -57742,7 +57742,7 @@ MonoBehaviour:
     spaceCount: 2
     wordCount: 3
     linkCount: 0
-    lineCount: 5
+    lineCount: 3
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
@@ -60162,7 +60162,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1763795329}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 270a7d79602256449adc31b48fc9c8a3, type: 3}
+  m_Script: {fileID: 11500000, guid: 14aec0f352bda5f40ba784ae7f87a07d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!61 &1763795338
@@ -62227,7 +62227,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: 0
+  m_firstOverflowCharacterIndex: -1
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0

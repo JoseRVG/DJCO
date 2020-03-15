@@ -1,11 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Platformer.Core;
 using Platformer.Mechanics;
+using Platformer.Model;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-using Platformer.Model;
-using Platformer.Core;
 
 namespace Platformer.Gameplay {
     public class Timer : MonoBehaviour {
@@ -15,7 +15,7 @@ namespace Platformer.Gameplay {
         public Transform TimerBar;
         public bool tictocflag;
         AudioSource audioData;
-
+        private PlayerController player;
         public AudioClip tic;
         public AudioClip toc;
         public AudioClip tictoc;
@@ -28,6 +28,7 @@ namespace Platformer.Gameplay {
             TimerBar.GetComponent<Image> ().fillAmount = 0;
             tictocflag = true;
             audioData = GetComponent<AudioSource> ();
+            player = FindObjectOfType<PlayerController> ();
         }
 
         // Update is called once per frame
@@ -55,10 +56,12 @@ namespace Platformer.Gameplay {
                 }
             } else {
                 textBox.text = timerBackup;
-                health.EndGame ();
-                PlatformerModel model = Simulation.GetModel<PlatformerModel> ();
-                var player = model.player;
-                player.controlEnabled = false;
+                if (player.grades > 0) {
+                    health.EndGame ();
+                    PlatformerModel model = Simulation.GetModel<PlatformerModel> ();
+                    var player = model.player;
+                    player.controlEnabled = false;
+                }
             }
         }
     }
