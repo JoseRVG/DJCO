@@ -15,6 +15,7 @@ namespace Platformer.Mechanics {
         public AudioClip jumpAudio;
         public AudioClip respawnAudio;
         public AudioClip ouchAudio;
+        public AudioClip sprintAudio;
 
         /// <summary>
         /// Max horizontal speed of the player.
@@ -203,12 +204,24 @@ namespace Platformer.Mechanics {
 
             animator.SetBool ("grounded", IsGrounded);
             animator.SetFloat ("velocityX", Mathf.Abs (velocity.x) / maxSpeed);
-
+            if (Input.GetKeyDown(KeyCode.Q) && (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D)))
+            {
+                print("q down");
+                audioSource.clip = sprintAudio;
+                audioSource.Play();
+            }
+            if (Input.GetKeyUp(KeyCode.Q))
+            {
+                print("q up");
+                audioSource.Stop();
+            }
             if (Input.GetKey (KeyCode.Q) && (Input.GetKey (KeyCode.RightArrow) || Input.GetKey (KeyCode.LeftArrow) || Input.GetKey (KeyCode.A) || Input.GetKey (KeyCode.D))) {
                 print ("SPEED");
                 if (health.currentStamina > 0) {
                     targetVelocity = move * (maxSpeed * 2);
                     health.DecrementStamina ();
+                    audioSource.clip = sprintAudio;
+                    audioSource.Play();
                 } else if (health.currentHP > 0) {
                     targetVelocity = move * (maxSpeed * 2);
                     health.Decrement ();
