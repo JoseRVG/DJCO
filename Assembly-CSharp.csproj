@@ -61,6 +61,7 @@
      <Compile Include="Assets\Mod Assets\Mod Resources\Scripts\Platformer\PlatformerSpeedPad.cs" />
      <Compile Include="Assets\Mod Assets\Mod Resources\Scripts\Platformer\SimpleTrigger.cs" />
      <Compile Include="Assets\Opendoor.cs" />
+     <Compile Include="Assets\Scenes\MainMenu.cs" />
      <Compile Include="Assets\Scripts\Core\Fuzzy.cs" />
      <Compile Include="Assets\Scripts\Core\HeapQueue.cs" />
      <Compile Include="Assets\Scripts\Core\Simulation.cs" />

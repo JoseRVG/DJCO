@@ -96,6 +96,7 @@ namespace Platformer.Mechanics {
         public void Victory () {
             Debug.Log ("Victory");
             vic.SetBool ("End", true);
+            timer.timeStart = 0;
         }
 
         void Awake () {
