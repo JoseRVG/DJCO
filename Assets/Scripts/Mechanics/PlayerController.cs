@@ -25,14 +25,10 @@ namespace Platformer.Mechanics {
         /// Initial jump velocity at the start of a jump.
         /// </summary>
         public float jumpTakeOffSpeed = 7;
-
         public JumpState jumpState = JumpState.Grounded;
         private bool stopJump;
-        /*internal new*/
         public Collider2D collider2d;
-        /*internal new*/
-        /*internal new*/
-        /*internal new*/
+
         public AudioSource audioSource;
         public Health health;
         public bool controlEnabled = true;
@@ -104,7 +100,7 @@ namespace Platformer.Mechanics {
                 move.x = 0;
             }
             if (onDoor) {
-                if (Input.GetKeyDown (KeyCode.E)|| Input.GetButtonDown("Fire3")) {
+                if (Input.GetKeyDown (KeyCode.E) || Input.GetButtonDown ("Fire3")) {
                     if (DoorControl) {
                         grades = grades - 1;
                         onDoor = false;
@@ -182,7 +178,7 @@ namespace Platformer.Mechanics {
 
             if (onLadder) {
                 gravityModifier = 0f;
-                if (Input.GetKeyDown (KeyCode.W) || Input.GetKeyDown (KeyCode.UpArrow) || Input.GetKeyDown (KeyCode.Space)|| Input.GetAxisRaw("Vertical")>0) {
+                if (Input.GetKeyDown (KeyCode.W) || Input.GetKeyDown (KeyCode.UpArrow) || Input.GetKeyDown (KeyCode.Space) || Input.GetAxisRaw ("Vertical") > 0) {
                     velocity.y = 5f;
                     jumpState = JumpState.InFlight;
                     if (Input.GetKeyDown (KeyCode.Q)) {
@@ -191,10 +187,10 @@ namespace Platformer.Mechanics {
                     } else {
                         targetVelocity = move * maxSpeed;
                     }
-                } else if (Input.GetKeyDown (KeyCode.DownArrow) || Input.GetKeyDown (KeyCode.S)||Input.GetAxisRaw("Vertical")<0) {
+                } else if (Input.GetKeyDown (KeyCode.DownArrow) || Input.GetKeyDown (KeyCode.S) || Input.GetAxisRaw ("Vertical") < 0) {
                     gravityModifier = 1f;
                     S_pressed = true;
-                } else if (Input.GetKeyUp (KeyCode.DownArrow) || Input.GetKeyUp (KeyCode.S)||Input.GetAxisRaw("Vertical")==0 ) {
+                } else if (Input.GetKeyUp (KeyCode.DownArrow) || Input.GetKeyUp (KeyCode.S) || Input.GetAxisRaw ("Vertical") == 0) {
                     S_pressed = false;
                 }
             } else if (!onLadder) {
@@ -204,24 +200,22 @@ namespace Platformer.Mechanics {
 
             animator.SetBool ("grounded", IsGrounded);
             animator.SetFloat ("velocityX", Mathf.Abs (velocity.x) / maxSpeed);
-            if ((Input.GetKey (KeyCode.LeftShift)|| Input.GetButtonDown("Fire4")) && (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D)|| Input.GetAxisRaw("Horizontal")==1|| Input.GetAxisRaw("Horizontal")==-1))
-            {
-                print("q down");
+            if ((Input.GetKey (KeyCode.LeftShift) || Input.GetButtonDown ("Fire4")) && (Input.GetKey (KeyCode.RightArrow) || Input.GetKey (KeyCode.LeftArrow) || Input.GetKey (KeyCode.A) || Input.GetKey (KeyCode.D) || Input.GetAxisRaw ("Horizontal") == 1 || Input.GetAxisRaw ("Horizontal") == -1)) {
+                print ("q down");
                 audioSource.clip = sprintAudio;
-                audioSource.Play();
+                audioSource.Play ();
             }
-            if (Input.GetKeyUp(KeyCode.LeftShift)|| Input.GetButtonUp("Fire4"))
-            {
-                print("q up");
-                audioSource.Stop();
+            if (Input.GetKeyUp (KeyCode.LeftShift) || Input.GetButtonUp ("Fire4")) {
+                print ("q up");
+                audioSource.Stop ();
             }
-            if ((Input.GetKey (KeyCode.LeftShift)|| Input.GetButton("Fire4")) && (Input.GetKey (KeyCode.RightArrow) || Input.GetKey (KeyCode.LeftArrow) || Input.GetKey (KeyCode.A) || Input.GetKey (KeyCode.D)|| Input.GetAxisRaw("Horizontal")==1|| Input.GetAxisRaw("Horizontal")==-1)) {
+            if ((Input.GetKey (KeyCode.LeftShift) || Input.GetButton ("Fire4")) && (Input.GetKey (KeyCode.RightArrow) || Input.GetKey (KeyCode.LeftArrow) || Input.GetKey (KeyCode.A) || Input.GetKey (KeyCode.D) || Input.GetAxisRaw ("Horizontal") == 1 || Input.GetAxisRaw ("Horizontal") == -1)) {
                 print ("SPEED");
                 if (health.currentStamina > 0) {
                     targetVelocity = move * (maxSpeed * 2);
                     health.DecrementStamina ();
                     audioSource.clip = sprintAudio;
-                    audioSource.Play();
+                    audioSource.Play ();
                 } else if (health.currentHP > 0) {
                     targetVelocity = move * (maxSpeed * 2);
                     health.Decrement ();

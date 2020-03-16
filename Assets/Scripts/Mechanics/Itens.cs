@@ -11,22 +11,18 @@ namespace Platformer.Mechanics {
         // Start is called before the first frame update
         void Start () {
             player = FindObjectOfType<PlayerController> ();
-            anim = GetComponent<Animator>();
+            anim = GetComponent<Animator> ();
         }
         // Update is called once per frame
         void OnTriggerEnter2D (Collider2D other) {
             if (other.tag == "Player") {
                 player.onDoor = true;
-                if(ID == System.Int32.Parse(player.DoorNum)){
+                if (ID == System.Int32.Parse (player.DoorNum)) {
                     player.DoorControl = true;
-                    anim.SetBool("doorISopen",true);
-                    
-                }
-                else
-                {
+                    anim.SetBool ("doorISopen", true);
+                } else {
                     player.DoorControl = false;
                 }
-                
             }
         }
 
@@ -34,7 +30,7 @@ namespace Platformer.Mechanics {
             if (other.tag == "Player") {
                 player.onDoor = false;
                 player.DoorControl = false;
-                anim.SetBool("doorISopen",false);
+                anim.SetBool ("doorISopen", false);
             }
         }
     }

@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 using Platformer.Gameplay;
+using UnityEngine;
 
 namespace Platformer.Mechanics {
     public class BoostTime : MonoBehaviour {
@@ -11,13 +11,13 @@ namespace Platformer.Mechanics {
         // Start is called before the first frame update
         void Start () {
             player = FindObjectOfType<PlayerController> ();
-            Boost.SetActive(true);
+            Boost.SetActive (true);
         }
         // Update is called once per frame
         void OnTriggerEnter2D (Collider2D other) {
             if (other.tag == "Player") {
                 time.timeStart += 15;
-                Boost.SetActive(false);
+                Boost.SetActive (false);
             }
         }
     }

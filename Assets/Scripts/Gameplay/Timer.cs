@@ -22,6 +22,10 @@ namespace Platformer.Gameplay {
 
         public Health health;
 
+        /// <summary>
+        /// Timer component marks the time left to deliver the grades
+        /// </summary>
+
         // Start is called before the first frame update
         void Start () {
             textBox.text = timeStart.ToString ();

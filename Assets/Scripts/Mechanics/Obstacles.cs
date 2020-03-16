@@ -15,7 +15,7 @@ namespace Platformer.Mechanics {
 
         public void update () {
             if (player.ObstacleNum == ID)
-                    obs.SetActive (true);
+                obs.SetActive (true);
         }
     }
 }

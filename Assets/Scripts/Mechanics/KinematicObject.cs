@@ -39,8 +39,6 @@ namespace Platformer.Mechanics {
         protected const float minMoveDistance = 0.001f;
         protected const float shellRadius = 0.01f;
 
-        
-
         /// <summary>
         /// Bounce the object's vertical velocity.
         /// </summary>
@@ -100,14 +98,10 @@ namespace Platformer.Mechanics {
                 velocity += Physics2D.gravity * Time.deltaTime;
 
             velocity.x = targetVelocity.x;
-            if (onLadder==true)
-            {
-                if (S_pressed==true)
-                {
+            if (onLadder == true) {
+                if (S_pressed == true) {
                     velocity.y = -2f;
-                }
-                else if (velocity.y<0)
-                {
+                } else if (velocity.y < 0) {
                     velocity.y = 0;
                 }
             }
