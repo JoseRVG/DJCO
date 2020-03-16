@@ -36,6 +36,7 @@ namespace Platformer.Mechanics {
                 var ev = Schedule<PlayerEnemyCollision> ();
                 ev.player = player;
                 ev.enemy = this;
+                player.health.currentHP = player.health.currentHP - 25;
             }
         }
 
