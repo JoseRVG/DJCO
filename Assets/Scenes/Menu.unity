@@ -2745,7 +2745,7 @@ RectTransform:
   m_GameObject: {fileID: 376531742}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 6.4846597, y: 6.3265, z: 6.3265}
+  m_LocalScale: {x: 10.634842, y: 10.37546, z: 10.37546}
   m_Children: []
   m_Father: {fileID: 1253918574}
   m_RootOrder: 1
@@ -7804,9 +7804,9 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1136188772}
-    characterCount: 5
+    characterCount: 4
     spriteCount: 0
-    spaceCount: 1
+    spaceCount: 0
     wordCount: 1
     linkCount: 0
     lineCount: 1
@@ -8650,7 +8650,7 @@ RectTransform:
   m_GameObject: {fileID: 1305803611}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 15.015878, y: 14.649643, z: 14.649643}
+  m_LocalScale: {x: 25.163607, y: 24.549871, z: 24.549871}
   m_Children: []
   m_Father: {fileID: 1973932817}
   m_RootOrder: 1
@@ -9259,7 +9259,7 @@ RectTransform:
   m_GameObject: {fileID: 1409712734}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 6.484661, y: 6.3264985, z: 6.3264985}
+  m_LocalScale: {x: 11.268395, y: 10.993556, z: 10.993556}
   m_Children: []
   m_Father: {fileID: 582187223}
   m_RootOrder: 1

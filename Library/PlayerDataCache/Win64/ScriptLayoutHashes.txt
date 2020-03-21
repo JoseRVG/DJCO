@@ -1,8 +1,9 @@
 Win64
 PlayerPath?
-C:/Users/Maverick/Desktop/game/MyFirstGame.exe
+C:/Users/Maverick/Desktop/Game/MyFirstGame.exe
 SceneListBegin?
-Assets/Scenes/SampleScene.unity
+Assets/Scenes/Menu.unity
+Assets/Scenes/GameScene.unity
 SceneListEnd?
 a1f19ad47d3094e235f21b74dfc423a8 Unity.Postprocessing.Runtime.dll:UnityEngine.Rendering.PostProcessing.PostProcessLayer
 23d669c8bf2983ca4a3df160658318a6 Cinemachine.dll:Cinemachine.CinemachineStateDrivenCamera
@@ -106,7 +107,7 @@ fd9b6c8d9f87c09a1c7022b589250f5e Assembly-CSharp.dll:Platformer.Mechanics.Animat
 b5eb08b578a2f2d80bb106cbe65ab501 Cinemachine.dll:Cinemachine.CinemachineStoryboard
 38bcb4d3f9a1812fd650f92e87a4cf64 Unity.Postprocessing.Runtime.dll:UnityEngine.Rendering.PostProcessing.PostProcessProfile
 7f94fa9762524c26e64e8a5afd194a0d Cinemachine.dll:.CinemachineCameraOffset
-71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:Platformer.Gameplay.GameOver
+8224539f9faae37e37af1d16aeda3e5a Assembly-CSharp.dll:Platformer.Gameplay.GameOver
 e82c0521cdfe8cb6a168ef7208a98d4a Unity.Postprocessing.Runtime.dll:UnityEngine.Rendering.PostProcessing.Vignette
 71bb6a6b6c8f052f948db64c7dd3ca4f Unity.InteractiveTutorials.Core.Scripts.dll:Unity.InteractiveTutorials.CollisionBroadcaster3D
 71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationPlayableAsset
@@ -137,6 +138,7 @@ ad9173d3a69d99153f38ed4b62226129 UnityEngine.Networking.dll:UnityEngine.Networki
 9b895dcabbc1faf095c000c32d471fd0 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformChild
 5887ef1bc706b22b773d253fd443ceef UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformVisualizer
 fb70f07c52fc0817edd54327b41ca12c Cinemachine.dll:Cinemachine.CinemachineFreeLook
+71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:Platformer.Mechanics.EnemyLadders
 d251bf88db6c95a6b1aa0b69298da9ef UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
 8963690ef6f6b05ce03bfd8b5c26e20c Cinemachine.dll:Cinemachine.NoiseSettings
 303ad70ce203ad874efe2965d0fbcff9 Unity.Analytics.Tracker.dll:UnityEngine.Analytics.AnalyticsEventTracker
@@ -151,7 +153,6 @@ b8a5e8091ab0b8861d2add371082c5e0 Unity.TextMeshPro.dll:TMPro.TMP_SpriteAsset
 71bb6a6b6c8f052f948db64c7dd3ca4f Unity.UIWidgets.dll:Unity.UIWidgets.engine.UIWidgetsMessageManager
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.TemplateEditorDetection
 7ec884402e82a75991e16446671fbc6d Assembly-CSharp.dll:Platformer.View.ParallaxLayer
-342bbd5948165f48ca5a470c4c1aea51 Assembly-CSharp.dll:.grades
 b3ab2106268377ffe25dd18ac23dca28 Unity.TextMeshPro.dll:TMPro.TMP_Asset
 6987e53805e8a29a4a553f91e9a02ba2 Cinemachine.dll:Cinemachine.CinemachineOrbitalTransposer
 7ca765ad7969aae95e8011264b9c4046 Cinemachine.dll:Cinemachine.CinemachineTriggerAction
@@ -173,7 +174,7 @@ a53651ee3996fbba20dfe0fce02f0b23 Unity.Postprocessing.Runtime.dll:UnityEngine.Re
 56df1fa7cea034df9863fe5a24200a32 Cinemachine.dll:Cinemachine.CinemachineTargetGroup
 82949f5c747382ccf28507e324146ee5 Assembly-CSharp.dll:Platformer.Mechanics.TokenController
 6a58148e302bd80ebe01341d576a8756 Assembly-CSharp.dll:Platformer.Mechanics.Itens
-93a845b88c440d2ca61be8fce29b1ccf Assembly-CSharp.dll:Platformer.Mechanics.PlayerController
+11b9d947113d274ebe383ea5283f4457 Assembly-CSharp.dll:Platformer.Mechanics.PlayerController
 7c792393fb82488bd20139dcc5ba26d8 Cinemachine.dll:Cinemachine.CinemachineTransposer
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:Platformer.Mechanics.Ladders
 e6ae40841db498b6e673877ac45ad208 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator
@@ -216,6 +217,7 @@ fb6a1ea36b4f6ef5948d283d93760765 UnityEngine.GoogleAudioSpatializer.dll:UnityEng
 5b0391b7e3d9ea9db6c0a8fbd0ca23f6 UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioSoundfieldExtension
 5b0391b7e3d9ea9db6c0a8fbd0ca23f6 UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioSourceExtension
 8cdb91c0a256015dd944c9e40bc5269e Assembly-CSharp.dll:.PlatformerJumpPad
+9420b0692d7ae770dceba226dd362d86 Assembly-CSharp.dll:.MainMenu
 19e43695d674c08155b5d317b8ea03d0 Assembly-CSharp.dll:.PlayAudioClip
 931f489e44eadf809e9310429c99dde5 UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioListenerExtension
 fb6a1ea36b4f6ef5948d283d93760765 UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioRoom
@@ -233,6 +235,7 @@ c0201dbecd85f700bcdff493a272631d Cinemachine.dll:Cinemachine.CinemachineImpulseS
 0f15034f74dcf7097a63e50a3539c638 Assembly-CSharp.dll:Platformer.Mechanics.PatrolPath
 507174d46dacbc5fe45e28485db5dd1e Unity.Analytics.DataPrivacy.dll:UnityEngine.Analytics.DataPrivacyButton
 d251bf88db6c95a6b1aa0b69298da9ef UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
+15e9b9e1dfc148c5ca0f17c9697eefd8 Assembly-CSharp.dll:.Tutorial
 6ff1c52123c50b3d73f35cd0e2e65dfd Cinemachine.dll:Cinemachine.CinemachineSmoothPath
 71bb6a6b6c8f052f948db64c7dd3ca4f Cinemachine.dll:Cinemachine.CinemachineHardLookAt
 f71894c03006b59610f6ef5f8ac0e42a Assembly-CSharp.dll:Platformer.Mechanics.EnemyController
@@ -246,6 +249,7 @@ ac6acd886c54c48c599ab5fed5781ea7 Unity.Postprocessing.Runtime.dll:UnityEngine.Re
 8dd7eeae5fbc27965d5726b12372a852 Assembly-CSharp.dll:Platformer.UI.MainUIController
 92f1a6fa53cef8a4f50f40db8fdbdd93 Assembly-CSharp.dll:Platformer.UI.MetaGameController
 cb02672c3a6589815f65462efd40e533 Assembly-CSharp.dll:Platformer.Mechanics.BoostHealth
+9d287cf3f5199fba30751baff4ced0fa Assembly-CSharp.dll:.TutorialEnter
 8649814970b42d345b89944b862453cc Unity.TextMeshPro.dll:TMPro.TMP_SubMesh
 71bb6a6b6c8f052f948db64c7dd3ca4f Unity.InteractiveTutorials.Core.Scripts.dll:Unity.InteractiveTutorials.CollisionBroadcaster2D
 ffdbd5802c2482a072a88f428ad3ca9d Cinemachine.dll:Cinemachine.CinemachineBrain
