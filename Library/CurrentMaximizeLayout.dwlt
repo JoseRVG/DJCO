@@ -24,7 +24,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 498}
   m_MaxSize: {x: 14004, y: 14048}
   vertical: 0
-  controlID: 18344
+  controlID: 3588
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -129,7 +129,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 498}
   m_MaxSize: {x: 10002, y: 14048}
   vertical: 1
-  controlID: 18345
+  controlID: 3546
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -154,7 +154,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 224}
   m_MaxSize: {x: 8006, y: 4024}
   vertical: 0
-  controlID: 18300
+  controlID: 3516
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -212,7 +212,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 46a2ffff26f4ffff98f6ffffb0f6ffff96faffffa0faffffdcfbffff484d00003e4e0000964e0000d44e0000564f0000764f0000365000009e540000c8560000f65700002c58000066590000
+      m_ExpandedIDs: eee6ffff1af7ffff32f7ffff1cfbffff26fbffffdcfbffff344d0000f24d0000224e0000c04e0000c64e0000e64e0000d84f00000e500000c0790000ee7a00005e7c0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -294,9 +294,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 26.59, y: 5.26, z: 1}
+    m_Target: {x: -787.50555, y: 338.70013, z: 0}
     speed: 2
-    m_Value: {x: 26.59, y: 5.26, z: 1}
+    m_Value: {x: -787.50555, y: 338.70013, z: 0}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -328,9 +328,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 2.9818919
+    m_Target: 4963.858
     speed: 2
-    m_Value: 2.9818919
+    m_Value: 4963.858
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -409,19 +409,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Scripts/Gameplay
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Scripts/Gameplay
   m_LastFoldersGridSize: -1
   m_LastProjectPath: "C:\\Users\\Maverick\\A Teacher\xB4s Nightmare"
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 231}
-    m_SelectedIDs: c6160000
-    m_LastClickedID: 5830
+    m_SelectedIDs: 1e180000
+    m_LastClickedID: 6174
     m_ExpandedIDs: 00000000ac110000d6120000081700009a1b0000961c0000a81e000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -475,8 +475,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: b8110000
-    m_LastClickedInstanceID: 4536
+    m_SelectedInstanceIDs: 5c080000
+    m_LastClickedInstanceID: 2140
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c623000070440000ac3600002a070000763b000000000000
     m_RenameOverlay:
@@ -969,10 +969,11 @@ MonoBehaviour:
       e32: 0
       e33: 1
   m_PreviewAnimator: {fileID: 0}
-  m_AnimatorController: {fileID: 9100000, guid: ed1bbb2dccb7a424a9969f916919f446,
+  m_AnimatorController: {fileID: 9100000, guid: df9ba7559378c984fb5bd6f4f47c0f03,
     type: 2}
   m_BreadCrumbs:
-  - m_Target: {fileID: 110773768, guid: ed1bbb2dccb7a424a9969f916919f446, type: 2}
+  - m_Target: {fileID: 1107477436463287666, guid: df9ba7559378c984fb5bd6f4f47c0f03,
+      type: 2}
     m_ScrollPosition: {x: 0, y: 0}
   stateMachineGraph: {fileID: 0}
   stateMachineGraphGUI: {fileID: 0}
@@ -1013,7 +1014,7 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 22096
+  m_LastSelectedObjectID: 20322
 --- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
