@@ -4,6 +4,7 @@ using UnityEngine;
 using static Platformer.Core.Simulation;
 using Platformer.Core;
 using Platformer.Model;
+using TMPro;
 using UnityEngine.UI;
 
 namespace Platformer.Mechanics {
@@ -16,12 +17,15 @@ namespace Platformer.Mechanics {
         /// </summary>
         public Slider myHealthBar;
         public Slider myStaminaBar;
+        public TextMeshProUGUI myHealthBarText;
+        public TextMeshProUGUI myStaminaBarText;
         public int maxHP;
         public int maxStamina;
         private int regeneration = 1;
         [SerializeField]
         private GameObject gameOverUI;
         private Timer timer;
+        private PlayerController player;
 
         /// <summary>
         /// Indicates if the entity should be considered 'alive'.
@@ -39,14 +43,18 @@ namespace Platformer.Mechanics {
 
         void Start () {
             timer = FindObjectOfType<Timer> ();
+            player = FindObjectOfType<PlayerController> ();
+            myHealthBarText.text = currentHP+"/"+maxHP;
+            myStaminaBarText.text = currentStamina + "/" + maxStamina;
+
         }
 
         public void Increment () {
             currentHP += regeneration;
             if (currentHP > maxHP)
                 currentHP = maxHP;
-
             myHealthBar.value = currentHP;
+            myHealthBarText.text = currentHP + "/" + maxHP;
         }
 
         public void IncrementStamina () {
@@ -55,6 +63,7 @@ namespace Platformer.Mechanics {
                 currentStamina = maxStamina;
 
             myStaminaBar.value = currentStamina;
+            myStaminaBarText.text = currentStamina + "/" + maxStamina;
         }
 
         /// <summary>
@@ -64,6 +73,7 @@ namespace Platformer.Mechanics {
         public void Decrement () {
             currentHP = Mathf.Clamp (currentHP - 1, 0, maxHP);
             myHealthBar.value = currentHP;
+            myHealthBarText.text = currentHP + "/" + maxHP;
             if (currentHP == 0) {
                 var ev = Schedule<HealthIsZero> ();
                 ev.health = this;
@@ -75,6 +85,7 @@ namespace Platformer.Mechanics {
         public void DecrementStamina () {
             currentStamina = Mathf.Clamp (currentStamina - 1, 0, maxStamina);
             myStaminaBar.value = currentStamina;
+            myStaminaBarText.text = currentStamina + "/" + maxStamina;
         }
 
         /// <summary>
@@ -87,10 +98,12 @@ namespace Platformer.Mechanics {
 
         public void EndGame () {
             Debug.Log ("END");
-            anim.SetBool ("End", true);
-            PlatformerModel model = Simulation.GetModel<PlatformerModel> ();
-            var player = model.player;
-            player.controlEnabled = false;
+            if (player.grades > 0) {
+                anim.SetBool ("End", true);
+                PlatformerModel model = Simulation.GetModel<PlatformerModel> ();
+                var player = model.player;
+                player.controlEnabled = false;
+            }
         }
 
         public void Victory () {

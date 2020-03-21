@@ -7,7 +7,6 @@ public class TutorialEnter : MonoBehaviour {
     public GameObject obj1;
     public Animator animator;
     public void OnFadeComplete () {
-        obj1.SetActive (false);
         SceneManager.LoadScene (SceneManager.GetActiveScene ().buildIndex);
     }
     public void RestartFading () {
