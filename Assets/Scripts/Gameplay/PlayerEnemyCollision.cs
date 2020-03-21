@@ -33,7 +33,7 @@ namespace Platformer.Gameplay {
                     Schedule<EnemyDeath> ().enemy = enemy;
                     player.Bounce (2);
                 }
-            } else {
+            } else if(player.Bounds.max.x >= enemy.Bounds.max.x || player.Bounds.min.x <= enemy.Bounds.min.y) {
                 if (player.health.currentHP == 1)
                     Schedule<PlayerDeath> ();
                 else
