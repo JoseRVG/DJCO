@@ -20,9 +20,6 @@ public class MainMenu : MonoBehaviour {
         obj2.SetActive(false);
     }
 
-    public void FadeOutLvl () {
-        animator.SetBool ("End", true);
-    }
     public void OnFadeComplete () {
         SceneManager.LoadScene (Lvl);
     }
