@@ -85,6 +85,7 @@ namespace Platformer.Mechanics {
         SpriteRenderer spriteRenderer;
         internal Animator animator;
         readonly PlatformerModel model = Simulation.GetModel<PlatformerModel> ();
+        public Color originalColor;
 
         public Bounds Bounds => collider2d.bounds;
 
@@ -96,6 +97,7 @@ namespace Platformer.Mechanics {
             var player = model.player;
             player.controlEnabled = false;
             RandomDoor ();
+            originalColor = spriteRenderer.color;
         }
 
         protected override void Update () {
@@ -247,12 +249,14 @@ namespace Platformer.Mechanics {
                 }
             } else if (collision) {
                 targetVelocity = move * maxSpeed;
-                img1.SetActive (true);
+                spriteRenderer.color = new Color(2, 0, 0);
+               // img1.SetActive (true);
                 StartCoroutine (waiter ());
             } else {
                 targetVelocity = move * maxSpeed;
-                img1.SetActive (false);
-                img.SetActive (false);
+                spriteRenderer.color = originalColor;
+                //img1.SetActive (false);
+               // img.SetActive (false);
             }
 
         }
