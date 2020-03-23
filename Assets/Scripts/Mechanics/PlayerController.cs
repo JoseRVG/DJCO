@@ -242,10 +242,18 @@ namespace Platformer.Mechanics {
                 } else if (health.currentHP > 0) {
                     targetVelocity = move * (maxSpeed * 2);
                     health.Decrement ();
-                    img.SetActive (true);
+                    if (spriteRenderer.color==originalColor)
+                    {
+                        spriteRenderer.color = new Color(2,0,0);
+                    }
+                    else
+                    {
+                        spriteRenderer.color = originalColor;
+                    }
+                   // img.SetActive (true);
                 } else {
                     targetVelocity = move * maxSpeed;
-                    img.SetActive (false);
+                   // img.SetActive (false);
                 }
             } else if (collision) {
                 targetVelocity = move * maxSpeed;
