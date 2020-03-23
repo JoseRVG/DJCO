@@ -16,34 +16,46 @@ namespace Platformer.Mechanics {
         public AudioClip respawnAudio;
         public AudioClip ouchAudio;
         public AudioClip sprintAudio;
-
+        public AudioClip audioHealth;
+        public AudioClip audioTimer;
+        public AudioClip audioTimerRunningOut;
+        public AudioSource audioSource;
+        public AudioSource audioBoost;
         /// <summary>
         /// Max horizontal speed of the player.
         /// </summary>
         public float maxSpeed = 7;
+        public float jumpTakeOffSpeed = 7;
+        private float waitHP = 5f;
+        private float lastRegenHP = 1f / 5f;
+        private float wait = 1f / 5f;
+        private float lastRegen = 1f / 5f;
         /// <summary>
         /// Initial jump velocity at the start of a jump.
         /// </summary>
-        public float jumpTakeOffSpeed = 7;
-        public JumpState jumpState = JumpState.Grounded;
-        private bool stopJump;
-        public Collider2D collider2d;
 
-        public AudioSource audioSource;
+        public JumpState jumpState = JumpState.Grounded;
+        public Collider2D collider2d;
+        public GameObject img;
+        public GameObject img1;
         public Health health;
+
+        private bool stopJump;
+        public bool boostHealth = false;
+        public bool boostTimer = false;
         public bool controlEnabled = true;
         public bool onDoor;
         public bool DoorControl = false;
+        private bool ObstacleController = false;
+        bool jump;
+        public bool collision = false;
+
         public string DoorNum;
+
         public int ObstacleNum;
         public int grades = 5;
-        private List<int> ObstacleUsed = new List<int> ();
-        private bool ObstacleController = false;
-        private float waitHP = 5f;
-        private float lastRegenHP = 1f / 5f;
 
-        private float wait = 1f / 5f;
-        private float lastRegen = 1f / 5f;
+        private List<int> ObstacleUsed = new List<int> ();
 
         public GameObject obs1;
         public GameObject obs2;
@@ -69,7 +81,6 @@ namespace Platformer.Mechanics {
         public GameObject obs22;
         public GameObject obs23;
 
-        bool jump;
         Vector2 move;
         SpriteRenderer spriteRenderer;
         internal Animator animator;
@@ -79,10 +90,11 @@ namespace Platformer.Mechanics {
 
         void Awake () {
             health = GetComponent<Health> ();
-            audioSource = GetComponent<AudioSource> ();
             collider2d = GetComponent<Collider2D> ();
             spriteRenderer = GetComponent<SpriteRenderer> ();
             animator = GetComponent<Animator> ();
+            var player = model.player;
+            player.controlEnabled = false;
             RandomDoor ();
         }
 
@@ -111,7 +123,16 @@ namespace Platformer.Mechanics {
             } else if (!onDoor) {
                 ObstacleController = false;
             }
-
+            if (boostHealth) {
+                audioBoost.clip = audioHealth;
+                audioBoost.Play ();
+                boostHealth = false;
+            }
+            if (boostTimer) {
+                audioBoost.clip = audioTimer;
+                audioBoost.Play ();
+                boostTimer = false;
+            }
             if (health.currentHP < health.maxHP)
                 if ((Time.time - waitHP) > lastRegenHP) {
                     health.Increment ();
@@ -219,11 +240,19 @@ namespace Platformer.Mechanics {
                 } else if (health.currentHP > 0) {
                     targetVelocity = move * (maxSpeed * 2);
                     health.Decrement ();
+                    img.SetActive (true);
                 } else {
                     targetVelocity = move * maxSpeed;
+                    img.SetActive (false);
                 }
+            } else if (collision) {
+                targetVelocity = move * maxSpeed;
+                img1.SetActive (true);
+                StartCoroutine (waiter ());
             } else {
                 targetVelocity = move * maxSpeed;
+                img1.SetActive (false);
+                img.SetActive (false);
             }
 
         }
@@ -460,6 +489,10 @@ namespace Platformer.Mechanics {
                     obs23.SetActive (true);
                     break;
             }
+        }
+        IEnumerator waiter () {
+            yield return new WaitForSeconds (1);
+            collision = false;
         }
 
         public enum JumpState {

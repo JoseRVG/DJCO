@@ -17,6 +17,7 @@ namespace Platformer.Mechanics {
         void OnTriggerEnter2D (Collider2D other) {
             if (other.tag == "Player") {
                 time.timeStart += 15;
+                player.boostTimer = true;
                 Boost.SetActive (false);
             }
         }

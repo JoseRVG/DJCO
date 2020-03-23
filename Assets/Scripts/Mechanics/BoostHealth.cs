@@ -15,6 +15,12 @@ namespace Platformer.Mechanics {
         void OnTriggerEnter2D (Collider2D other) {
             if (other.tag == "Player") {
                 player.health.currentHP += 15;
+                if(player.health.currentHP > player.health.maxHP){
+                    player.health.currentHP = player.health.maxHP;
+                    player.health.myHealthBar.value = player.health.currentHP;
+                    player.health.myHealthBarText.text = player.health.currentHP + "/" + player.health.maxHP;
+                }
+                player.boostHealth = true;
                 Boost.SetActive(false);
             }
         }

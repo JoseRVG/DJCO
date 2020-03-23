@@ -31,7 +31,7 @@ namespace Platformer.Mechanics {
         /// Indicates if the entity should be considered 'alive'.
         /// </summary>
         public bool IsAlive => currentHP > 0;
-
+        
         public int currentHP;
         public int currentStamina;
         public Animator anim;
@@ -74,10 +74,14 @@ namespace Platformer.Mechanics {
             currentHP = Mathf.Clamp (currentHP - 1, 0, maxHP);
             myHealthBar.value = currentHP;
             myHealthBarText.text = currentHP + "/" + maxHP;
+            player.audioSource.clip = player.ouchAudio;
+            player.audioSource.Play ();
             if (currentHP == 0) {
                 var ev = Schedule<HealthIsZero> ();
                 ev.health = this;
                 timer.timeStart = 0;
+                player.audioSource.clip = player.respawnAudio;
+                player.audioSource.Play ();
                 EndGame ();
             }
         }
