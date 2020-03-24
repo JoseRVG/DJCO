@@ -24,7 +24,7 @@ namespace Platformer.Gameplay {
         public AudioClip tic;
         public AudioClip toc;
         public AudioClip tictoc;
-        Vector3 temp = new Vector3 (-634f, -233f, 0);
+        Vector3 temp ;
         public Health health;
         PlatformerModel model = Simulation.GetModel<PlatformerModel> ();
         /// <summary>
@@ -33,12 +33,13 @@ namespace Platformer.Gameplay {
 
         // Start is called before the first frame update
         void Start () {
+            temp = new Vector3((Screen.width / 2) - (obj.GetComponent<RectTransform>().sizeDelta.x / 2), (Screen.height / 2) - (obj.GetComponent<RectTransform>().sizeDelta.y / 2), 0);
             textBox.text = timeStart.ToString ();
             TimerBar.GetComponent<Image> ().fillAmount = 0;
             tictocflag = true;
             audioData = GetComponent<AudioSource> ();
             player = FindObjectOfType<PlayerController> ();
-            obj.transform.position += temp;
+            obj.transform.position = temp;
             obj.transform.localScale = new Vector3 (6.0f, 6.0f, 3.0f);
         }
 
@@ -51,7 +52,7 @@ namespace Platformer.Gameplay {
                 objColor.GetComponent<Image> ().color = color;
             }
             if (startgame) {
-                if (startTimer <= 5) {
+                if (startTimer <= 4) {
                     startTimer += Time.deltaTime;
                     if (startTimer < 3)
                         textBox.text = Mathf.Round (startTimer).ToString ();
@@ -77,8 +78,8 @@ namespace Platformer.Gameplay {
                 } else {
                     startgame = false;
                     var player = model.player;
-                    temp = new Vector3 (634f, 233f, 0);
-                    obj.transform.position += temp;
+                    temp = new Vector3(((Screen.width * 29/30)- obj.GetComponent<RectTransform>().sizeDelta.x ), ((Screen.height * 29 / 30) - obj.GetComponent<RectTransform>().sizeDelta.y), 0);
+                    obj.transform.position = temp;
                     obj.transform.localScale = new Vector3 (2.0f, 2.0f, 1.0f);
                     player.controlEnabled = true;
                 }
