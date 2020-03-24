@@ -244,11 +244,13 @@ namespace Platformer.Mechanics {
                     health.Decrement ();
                     if (spriteRenderer.color==originalColor)
                     {
-                        spriteRenderer.color = new Color(2,0,0);
+                        spriteRenderer.color = new Color(2, 0, 0);
+                              
                     }
                     else
                     {
-                        spriteRenderer.color = originalColor;
+                        StartCoroutine(sprintwaiter());
+                        
                     }
                    // img.SetActive (true);
                 } else {
@@ -505,6 +507,13 @@ namespace Platformer.Mechanics {
         IEnumerator waiter () {
             yield return new WaitForSeconds (1);
             collision = false;
+        }
+    
+        IEnumerator sprintwaiter()
+        {
+            yield return new WaitForSeconds(0.2f);
+
+                spriteRenderer.color = originalColor;
         }
 
         public enum JumpState {
