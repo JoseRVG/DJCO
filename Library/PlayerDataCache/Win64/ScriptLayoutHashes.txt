@@ -1,6 +1,6 @@
 Win64
 PlayerPath?
-C:/Users/Ricardo Lopes/Desktop/A Teachers Nightmare.exe
+C:/Users/Maverick/Desktop/Game Folder/A Teachers Nightmare.exe
 SceneListBegin?
 Assets/Scenes/Menu.unity
 Assets/Scenes/GameScene.unity
@@ -31,7 +31,6 @@ d227987243593b32ae57394d06018643 Cinemachine.dll:Cinemachine.CinemachineFixedSig
 e7a73f5f78ba6445195ec23b74a1ce2d Unity.TextMeshPro.dll:TMPro.TMP_ScrollbarEventHandler
 af93f9c42e90877a9ba31e37adfd900c Unity.Postprocessing.Runtime.dll:UnityEngine.Rendering.PostProcessing.MotionBlur
 71bb6a6b6c8f052f948db64c7dd3ca4f Unity.InteractiveTutorials.Core.Scripts.dll:Unity.InteractiveTutorials.SelectionRoot
-3fc7ee92412f03b2aa10ee6da3eb81b7 Assembly-CSharp.dll:Platformer.Mechanics.TokenInstance
 c80bc562de10fdbf8b2e9bcb89d80421 Cinemachine.dll:Cinemachine.CinemachineCollisionImpulseSource
 cf9f5cf2c3145a37ac07f00e50e460f9 UnityEngine.UI.dll:UnityEngine.UI.AspectRatioFitter
 71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.UI.dll:UnityEngine.EventSystems.BaseInput
@@ -68,6 +67,8 @@ abf1930d8126d0b2e00e9449129a0190 UnityEngine.UI.dll:UnityEngine.EventSystems.Tou
 f542c1afca5bb4022f91fdda19b8d622 Unity.Postprocessing.Runtime.dll:UnityEngine.Rendering.PostProcessing.DepthOfField
 d3c76b14a25eebd3a3323dd43297919c Unity.TextMeshPro.dll:TMPro.TMP_InputField
 3258f693908bf16e2baac52a26036d52 Assembly-CSharp.dll:Platformer.Mechanics.GameController
+71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.Advertisements.dll:UnityEngine.Advertisements.CallbackExecutor
+71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.Advertisements.dll:UnityEngine.Advertisements.Editor.Placeholder
 89cbcfa77989979e1843b899c81094a8 Assembly-CSharp.dll:.EmitParticlesOnLand
 cf9f5cf2c3145a37ac07f00e50e460f9 UnityEngine.UI.dll:UnityEngine.UI.AspectRatioFitter
 71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.UI.dll:UnityEngine.EventSystems.BaseInput
@@ -160,7 +161,6 @@ b3ab2106268377ffe25dd18ac23dca28 Unity.TextMeshPro.dll:TMPro.TMP_Asset
 bd543bad7f9f6262f10595aadb130d22 Cinemachine.dll:Cinemachine.CinemachineComposer
 082126d032cc22804037f26289a7068a Unity.InteractiveTutorials.Core.Scripts.dll:.SceneObjectGUIDComponent
 71bb6a6b6c8f052f948db64c7dd3ca4f Unity.Analytics.Editor.dll:UnityEditor.Analytics.AnalyticsEventTrackerEditor
-71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:Platformer.Mechanics.DeathZone
 15882a52798c275361cd0a3ada984ec5 Cinemachine.dll:Cinemachine.CinemachineDollyCart
 d6fc8d3165070298511ec776ea575626 Unity.Postprocessing.Runtime.dll:UnityEngine.Rendering.PostProcessing.PostProcessResources
 71bb6a6b6c8f052f948db64c7dd3ca4f Unity.TextMeshPro.dll:TMPro.TMP_SpriteAnimator
@@ -174,7 +174,6 @@ f03fc05ee377d374feb2dd5a2d80a342 Assembly-CSharp.dll:Platformer.Gameplay.Timer
 4fd8bf02e3089425d3502e26c44ba31a Unity.TextMeshPro.dll:TMPro.TextContainer
 0508effb180408aa899c5a59f4273a45 Assembly-CSharp.dll:.btnFX
 56df1fa7cea034df9863fe5a24200a32 Cinemachine.dll:Cinemachine.CinemachineTargetGroup
-82949f5c747382ccf28507e324146ee5 Assembly-CSharp.dll:Platformer.Mechanics.TokenController
 6a58148e302bd80ebe01341d576a8756 Assembly-CSharp.dll:Platformer.Mechanics.Itens
 7f19f85b63f81b254282b0cf204ba1b3 Assembly-CSharp.dll:Platformer.Mechanics.PlayerController
 7c792393fb82488bd20139dcc5ba26d8 Cinemachine.dll:Cinemachine.CinemachineTransposer
@@ -193,7 +192,6 @@ e0ee4b3d4e27318934cc940a969d3d96 UnityEngine.Networking.dll:UnityEngine.Networki
 ad9173d3a69d99153f38ed4b62226129 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransform
 9b895dcabbc1faf095c000c32d471fd0 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformChild
 5887ef1bc706b22b773d253fd443ceef UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformVisualizer
-71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:Platformer.Mechanics.VictoryZone
 a66794b62dbf044668a5f102bb7908c2 Cinemachine.dll:Cinemachine.CinemachineImpulseListener
 697068b4cb32f8d7d4a3c7eb151f90df Assembly-CSharp.dll:.SimpleTrigger
 e6d75f1a9bc0c6f7085df0baa077e688 Cinemachine.dll:Cinemachine.CinemachineGroupComposer
@@ -206,7 +204,6 @@ c4117cf32d2e7797e9e05272a419cd6e Cinemachine.dll:Cinemachine.Timeline.Cinemachin
 e1300922cc039f41ab46a47f4cb05898 Unity.TextMeshPro.dll:TMPro.TMP_Settings
 df21ffd1864551a3e43410f28754a73e Cinemachine.dll:Cinemachine.CinemachineConfiner
 1e3d6222ff533d213aab144eb854a53b Cinemachine.dll:.CinemachineTouchInputMapper
-71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:Platformer.Mechanics.SpawnPoint
 88cc9df3c6fc697bfbeacd24c0d6f2d7 UnityEngine.TestRunner.dll:UnityEngine.TestTools.BeforeAfterTestCommandState
 88cc9df3c6fc697bfbeacd24c0d6f2d7 UnityEngine.TestRunner.dll:UnityEngine.TestTools.EnumerableSetUpTearDownCommandState
 71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.Callbacks.PlayModeRunnerCallback
@@ -242,7 +239,6 @@ d251bf88db6c95a6b1aa0b69298da9ef UnityEngine.SpatialTracking.dll:UnityEngine.Spa
 71bb6a6b6c8f052f948db64c7dd3ca4f Cinemachine.dll:Cinemachine.CinemachineHardLookAt
 f71894c03006b59610f6ef5f8ac0e42a Assembly-CSharp.dll:Platformer.Mechanics.EnemyController
 d791aa6007fa3640be1164ea75bb087d Unity.TextMeshPro.dll:TMPro.TMP_StyleSheet
-0c67c33fe341116ae41ec25d977cdb4c Assembly-CSharp.dll:.Demo
 d5630f96bd5a6a6eed7e1754c3fb8703 Unity.Postprocessing.Runtime.dll:UnityEngine.Rendering.PostProcessing.PostProcessVolume
 d0987ce3e9092dbe0fa30d73f333fffa Unity.Postprocessing.Runtime.dll:UnityEngine.Rendering.PostProcessing.Grain
 df434544c9f7b33d1cc7e635b180d279 Unity.TextMeshPro.dll:TMPro.TextMeshPro

@@ -24,7 +24,7 @@ namespace Platformer.Gameplay {
         public AudioClip tic;
         public AudioClip toc;
         public AudioClip tictoc;
-        Vector3 temp ;
+        Vector3 temp;
         public Health health;
         PlatformerModel model = Simulation.GetModel<PlatformerModel> ();
         /// <summary>

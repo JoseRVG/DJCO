@@ -7367,7 +7367,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 4ad1eccd09ae223468b0a2392c7e996a, type: 3}
+  m_Texture: {fileID: 2800000, guid: db3bda92bf166434e931a5eb9d8da461, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -8239,7 +8239,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Using HP on Sprint:'
+  m_text: 'HP on Sprint/hiteds:'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2abf75d6e0d8a4aa6910fae6ee5d638b, type: 2}
   m_sharedMaterial: {fileID: 21352953850445826, guid: 2abf75d6e0d8a4aa6910fae6ee5d638b,
@@ -8309,9 +8309,9 @@ MonoBehaviour:
   m_margin: {x: -156.73572, y: 0, z: -14.855988, w: 0}
   m_textInfo:
     textComponent: {fileID: 1056631160}
-    characterCount: 19
+    characterCount: 20
     spriteCount: 0
-    spaceCount: 3
+    spaceCount: 2
     wordCount: 4
     linkCount: 0
     lineCount: 1
