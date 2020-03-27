@@ -31,7 +31,7 @@ namespace Platformer.Mechanics {
         /// Indicates if the entity should be considered 'alive'.
         /// </summary>
         public bool IsAlive => currentHP > 0;
-        
+
         public int currentHP;
         public int currentStamina;
         public Animator anim;
@@ -44,7 +44,7 @@ namespace Platformer.Mechanics {
         void Start () {
             timer = FindObjectOfType<Timer> ();
             player = FindObjectOfType<PlayerController> ();
-            myHealthBarText.text = currentHP+"/"+maxHP;
+            myHealthBarText.text = currentHP + "/" + maxHP;
             myStaminaBarText.text = currentStamina + "/" + maxStamina;
 
         }
@@ -102,7 +102,7 @@ namespace Platformer.Mechanics {
 
         public void EndGame () {
             Debug.Log ("END");
-            if (player.grades > 0) {
+            if (player.grades > 0 || timer.timeStart > 0) {
                 anim.SetBool ("End", true);
                 PlatformerModel model = Simulation.GetModel<PlatformerModel> ();
                 var player = model.player;

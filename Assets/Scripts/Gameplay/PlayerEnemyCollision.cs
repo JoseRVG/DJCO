@@ -36,7 +36,7 @@ namespace Platformer.Gameplay {
                     player.Bounce (2);
                     player.collision = true;
                 }
-            } else if (player.Bounds.max.x >= enemy.Bounds.max.x || player.Bounds.min.x <= enemy.Bounds.min.x || player.Bounds.min.y <= enemy.Bounds.min.y || player.Bounds.max.y >= enemy.Bounds.min.y) {
+            } else if (player.Bounds.max.x >= enemy.Bounds.max.x || player.Bounds.min.x >= enemy.Bounds.min.x || player.Bounds.min.y >= enemy.Bounds.min.y || player.Bounds.max.y >= enemy.Bounds.min.y) {
                 if (player.health.currentHP == 1)
                     Schedule<PlayerDeath> ();
                 else {

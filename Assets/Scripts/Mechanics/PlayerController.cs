@@ -242,31 +242,28 @@ namespace Platformer.Mechanics {
                 } else if (health.currentHP > 0) {
                     targetVelocity = move * (maxSpeed * 2);
                     health.Decrement ();
-                    if (spriteRenderer.color==originalColor)
-                    {
-                        spriteRenderer.color = new Color(2, 0, 0);
-                              
+                    if (spriteRenderer.color == originalColor) {
+                        spriteRenderer.color = new Color (2, 0, 0);
+
+                    } else {
+                        StartCoroutine (sprintwaiter ());
+
                     }
-                    else
-                    {
-                        StartCoroutine(sprintwaiter());
-                        
-                    }
-                   // img.SetActive (true);
+                    // img.SetActive (true);
                 } else {
                     targetVelocity = move * maxSpeed;
-                   // img.SetActive (false);
+                    // img.SetActive (false);
                 }
             } else if (collision) {
                 targetVelocity = move * maxSpeed;
-                spriteRenderer.color = new Color(2, 0, 0);
-               // img1.SetActive (true);
+                spriteRenderer.color = new Color (2, 0, 0);
+                // img1.SetActive (true);
                 StartCoroutine (waiter ());
             } else {
                 targetVelocity = move * maxSpeed;
                 spriteRenderer.color = originalColor;
                 //img1.SetActive (false);
-               // img.SetActive (false);
+                // img.SetActive (false);
             }
 
         }
@@ -494,10 +491,10 @@ namespace Platformer.Mechanics {
                     obs20.SetActive (true);
                     break;
                 case 21:
-                    obs21.SetActive (true);
+                    obs22.SetActive (true);
                     break;
                 case 22:
-                    obs22.SetActive (true);
+                    obs21.SetActive (true);
                     break;
                 case 23:
                     obs23.SetActive (true);
@@ -508,12 +505,11 @@ namespace Platformer.Mechanics {
             yield return new WaitForSeconds (1);
             collision = false;
         }
-    
-        IEnumerator sprintwaiter()
-        {
-            yield return new WaitForSeconds(0.2f);
 
-                spriteRenderer.color = originalColor;
+        IEnumerator sprintwaiter () {
+            yield return new WaitForSeconds (0.2f);
+
+            spriteRenderer.color = originalColor;
         }
 
         public enum JumpState {

@@ -16,7 +16,7 @@ namespace Platformer.Mechanics {
         // Update is called once per frame
         void OnTriggerEnter2D (Collider2D other) {
             if (other.tag == "Player") {
-                time.timeStart += 15;
+                time.timeStart += 20;
                 player.boostTimer = true;
                 Boost.SetActive (false);
             }

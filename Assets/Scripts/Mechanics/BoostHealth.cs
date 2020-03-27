@@ -14,7 +14,7 @@ namespace Platformer.Mechanics {
         // Update is called once per frame
         void OnTriggerEnter2D (Collider2D other) {
             if (other.tag == "Player") {
-                player.health.currentHP += 15;
+                player.health.currentHP += 30;
                 if(player.health.currentHP > player.health.maxHP){
                     player.health.currentHP = player.health.maxHP;
                     player.health.myHealthBar.value = player.health.currentHP;
